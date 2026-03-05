@@ -57,7 +57,7 @@
   }
 
   h1 {
-    @apply text-5xl md:text-7xl tracking-tight mb-3;
+    @apply text-5xl md:text-7xl tracking-tight mb-6;
   }
 
   h2 {
@@ -65,11 +65,11 @@
   }
 
   p {
-    @apply text-base text-secondary-text;
+    @apply text-base md:text-lg;
   }
 
   small {
-    @apply text-xs;
+    @apply text-xs md:text-sm;
   }
 }
 
@@ -99,12 +99,8 @@
 
   /* Image system */
 
-  .image-wrapper {
-    @apply relative overflow-hidden;
-  }
-
   .image-overlay-dark {
-    @apply absolute inset-0 bg-black/40;
+    @apply absolute size-full inset-0 bg-linear-to-t from-black/50 to-transparent z-0;
   }
 }
 
