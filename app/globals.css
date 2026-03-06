@@ -57,7 +57,7 @@
   }
 
   h2 {
-    @apply text-4xl md:text-5xl mb-8;
+    @apply text-4xl md:text-5xl mb-10 md:mb-12;
   }
 
   p {
@@ -97,6 +97,12 @@
 
   .image-overlay-dark {
     @apply absolute size-full inset-0 bg-linear-to-t from-black/50 to-transparent z-0;
+  }
+
+  /* Subtitle */
+
+  .subtitle {
+    @apply text-xs md:text-sm tracking-[0.3em] uppercase mb-4;
   }
 }
 

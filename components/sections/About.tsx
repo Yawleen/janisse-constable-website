@@ -3,7 +3,7 @@ import Image from 'next/image';
 const About = () => {
   return (
     <section className="flex flex-col gap-10 md:flex-row md:justify-center md:gap-20">
-      <div className="relative w-full self-center max-w-md aspect-3/4 md:min-w-sm md:self-auto">
+      <div className="relative w-full self-center max-w-md aspect-3/4 md:min-w-sm">
         <Image
           src="/images/who-i-am.jpg"
           fill
@@ -13,7 +13,7 @@ const About = () => {
         />
       </div>
       <div className="max-w-xl">
-        <p className="text-xs tracking-[0.3em] uppercase mb-4">À propos</p>
+        <p className="subtitle">À propos</p>
         <h2>Qui suis-je ?</h2>
         <div className="space-y-5">
           <p>
@@ -25,9 +25,9 @@ const About = () => {
           </p>
           <p>
             Originaire du Val d’Oise, je suis fière d’être francilienne et
-            d’habiter depuis un an dans les Hauts‑de‑Seine, pour l&apos;attractivité
-            économique, culturelle, la qualité de vie, et la proximité avec
-            Paris. Je m’y sens merveilleusement bien.
+            d’habiter depuis un an dans les Hauts‑de‑Seine, pour
+            l&apos;attractivité économique, culturelle, la qualité de vie, et la
+            proximité avec Paris. Je m’y sens merveilleusement bien.
           </p>
           <p>
             Même s’il est loin d&apos;être terminé, mon parcours jusqu&apos;à
