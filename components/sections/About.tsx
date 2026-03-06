@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section className="flex flex-col gap-10 md:flex-row md:justify-center md:gap-20">
+    <section className="flex flex-col gap-10 lg:flex-row lg:justify-center lg:gap-20">
       <div className="relative w-full self-center max-w-md aspect-3/4 md:min-w-sm">
         <Image
           src="/images/who-i-am.jpg"
