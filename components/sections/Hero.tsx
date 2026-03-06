@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="relative text-primary-text min-h-screen bg-[url(/images/hero-bg.jpg)] bg-cover bg-center flex flex-col justify-end">
+    <section className="relative py-18 md:py-26 text-primary-text min-h-screen bg-[url(/images/hero-bg.jpg)] bg-cover bg-center flex flex-col justify-end">
       <div className="image-overlay-dark"></div>
       <p className="text-xs md:text-sm uppercase tracking-[0.3em] mb-3">
         Candidate n°1 - Miss Hauts-de-Seine
