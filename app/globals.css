@@ -16,7 +16,7 @@
   /* Spacing */
   --section-x-mobile: 2.5rem;
   --section-x-desktop: 3rem;
-  --section-y-mobile: 4.5rem;
+  --section-y-mobile: 5rem;
   --section-y-desktop: 7rem;
 }
 
@@ -28,7 +28,7 @@
   }
 
   body {
-    @apply bg-background text-secondary-text;
+    @apply bg-background text-secondary-text min-w-[320px];
   }
 
   ::selection {
@@ -45,10 +45,6 @@
     @apply px-(--section-x-mobile) py-(--section-y-mobile) md:px-(--section-x-desktop) md:py-(--section-y-desktop);
   }
 
-  img {
-    @apply size-full object-cover;
-  }
-
   /* Typography system */
 
   h1,
@@ -61,7 +57,7 @@
   }
 
   h2 {
-    @apply text-4xl md:text-5xl mb-2;
+    @apply text-4xl md:text-5xl mb-8;
   }
 
   p {
