@@ -118,8 +118,3 @@
     @apply size-7 md:size-8 text-accent stroke-[1.2px];
   }
 }
-
-
-/* Animations */
-
-@layer utilities {}

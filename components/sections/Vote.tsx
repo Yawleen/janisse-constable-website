@@ -4,7 +4,7 @@ import {
   DevicePhoneMobileIcon,
 } from '@heroicons/react/24/outline';
 import VoteInfo from '../ui/VoteInfo';
-import Button from '../ui/Button';
+import Button from '../ui/LinkButton';
 
 const number = '71414';
 const message = 'MISS 1';
