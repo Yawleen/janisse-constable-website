@@ -65,7 +65,7 @@ const Vote = () => {
         })}
       </div>
       <div className="md:hidden">
-        <Button variant="outline" href={smsLink}>
+        <Button href={smsLink}>
           Envoyer <span>{message}</span> au <span>{number}</span>
         </Button>
       </div>

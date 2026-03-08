@@ -74,7 +74,7 @@
   /* Button system */
 
   .btn {
-    @apply px-6 py-5 md:px-7 md:py-6 uppercase tracking-wider text-sm md:text-base transition-colors duration-300 ease-in-out;
+    @apply px-6 py-5 md:px-7 md:py-6 uppercase tracking-wider text-sm md:text-base transition-all duration-300 ease-in-out;
   }
 
   .btn-primary {
@@ -86,6 +86,10 @@
     @apply opacity-[.9];
   }
 
+  .btn-primary span {
+    @apply text-base font-bold;
+  }
+
   .btn-outline {
     @apply border border-primary;
   }
@@ -95,14 +99,6 @@
     @apply bg-primary text-primary-text;
   }
 
-  .btn-outline span {
-    @apply text-base md:text-lg font-bold text-primary transition-colors duration-300 ease-in-out;
-  }
-
-  .btn-outline:hover span,
-  .btn-outline:focus span {
-    @apply text-primary-text;
-  }
 
   /* Image system */
 
