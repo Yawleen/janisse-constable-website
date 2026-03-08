@@ -68,9 +68,7 @@ const Values = () => {
           return (
             <Value
               key={value.title}
-              icon={
-                <Icon className="size-7 md:size-9 text-primary stroke-[1.2px]" />
-              }
+              icon={<Icon className="icon" />}
               text={value.title}
               description={value.description}
             />

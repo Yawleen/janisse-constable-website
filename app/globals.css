@@ -115,7 +115,7 @@
   /* Icons */
 
   .icon {
-    @apply size-6 md:size-8 text-accent stroke-[1.2px];
+    @apply size-7 md:size-8 text-accent stroke-[1.2px];
   }
 }
 
