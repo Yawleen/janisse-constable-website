@@ -74,23 +74,34 @@
   /* Button system */
 
   .btn {
-    @apply px-6 py-3 uppercase tracking-wider text-sm font-bold transition-colors duration-300 ease-in-out;
+    @apply px-6 py-5 md:px-7 md:py-6 uppercase tracking-wider text-sm md:text-base transition-colors duration-300 ease-in-out;
   }
 
   .btn-primary {
     @apply bg-accent text-accent-text;
   }
 
-  .btn-primary:hover {
+  .btn-primary:hover,
+  .btn-primary:focus {
     @apply opacity-[.9];
   }
 
   .btn-outline {
-    @apply text-primary border border-primary;
+    @apply border border-primary;
   }
 
-  .btn-outline:hover {
+  .btn-outline:hover,
+  .btn-outline:focus {
     @apply bg-primary text-primary-text;
+  }
+
+  .btn-outline span {
+    @apply text-base md:text-lg font-bold text-primary transition-colors duration-300 ease-in-out;
+  }
+
+  .btn-outline:hover span,
+  .btn-outline:focus span {
+    @apply text-primary-text;
   }
 
   /* Image system */
@@ -103,6 +114,12 @@
 
   .subtitle {
     @apply text-xs md:text-sm tracking-[0.3em] uppercase mb-4;
+  }
+
+  /* Icons */
+
+  .icon {
+    @apply size-6 md:size-8 text-accent stroke-[1.2px];
   }
 }
 
