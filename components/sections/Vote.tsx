@@ -23,7 +23,7 @@ const voteInfo: {
     description: (
       <>
         Envoyez <strong>{message}</strong> par SMS au <strong>{number}</strong>{' '}
-        pour voter pour me soutenir.
+        pour me soutenir.
       </>
     ),
     info: '1 SMS = 1 vote ; 0.99€ + coût d’un SMS selon votre opérateur.',
