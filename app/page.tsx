@@ -5,6 +5,7 @@ import Vote from '@/components/sections/Vote';
 import Gallery from '@/components/sections/Gallery';
 import Event from '@/components/sections/Event';
 import Engagement from '@/components/sections/Engagement';
+import Footer from '@/components/sections/Footer';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Gallery />
       <Event />
       <Engagement />
+      <Footer />
     </main>
   );
 }

@@ -117,4 +117,8 @@
   .icon {
     @apply size-7 md:size-8 text-accent stroke-[1.2px];
   }
+
+  .contact-link {
+    @apply text-primary-text/50 hover:text-primary-text transition-colors duration-300;
+  }
 }
