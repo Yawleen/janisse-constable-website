@@ -37,7 +37,9 @@ const StickyVoteBar = () => {
             <strong className="text-primary-text">{number}</strong>
           </p>
 
-          <Button href={smsLink}>Voter</Button>
+          <div className="md:hidden">
+            <Button href={smsLink}>Voter</Button>
+          </div>
         </div>
       </div>
     </div>
