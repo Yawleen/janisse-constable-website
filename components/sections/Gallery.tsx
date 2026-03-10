@@ -39,10 +39,12 @@ const Gallery = () => {
 
   return (
     <section className="bg-[#ebe6df]">
-      <p className="subtitle">Portfolio</p>
-      <h2>
-        Galerie <span className="italic">éditoriale</span>
-      </h2>
+      <div className="max-w-4xl mx-auto">
+        <p className="subtitle">Portfolio</p>
+        <h2>
+          Galerie <span className="italic">éditoriale</span>
+        </h2>
+      </div>
       <Carousel
         setApi={setApi}
         className="w-full max-w-2xl mx-auto mt-10 md:mt-14"
