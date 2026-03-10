@@ -5,11 +5,9 @@ import {
 } from '@heroicons/react/24/outline';
 import VoteInfo from '../ui/VoteInfo';
 import Button from '../ui/LinkButton';
+import { SMS_VOTE } from '@/constants/vote';
 
-const number = '71414';
-const message = 'MISS 1';
-
-const smsLink = `sms:${number}?body=${encodeURIComponent(message)}`;
+const smsLink = `sms:${SMS_VOTE.number}?body=${encodeURIComponent(SMS_VOTE.keyword)}`;
 
 const voteInfo: {
   icon: ElementType;
@@ -22,11 +20,11 @@ const voteInfo: {
     title: 'Votez par SMS',
     description: (
       <>
-        Envoyez <strong>{message}</strong> par SMS au <strong>{number}</strong>{' '}
-        pour me soutenir.
+        Envoyez <strong>{SMS_VOTE.keyword}</strong> par SMS au{' '}
+        <strong>{SMS_VOTE.number}</strong> pour me soutenir.
       </>
     ),
-    info: '1 SMS = 1 vote ; 0.99€ + coût d’un SMS selon votre opérateur.',
+    info: `1 SMS = 1 vote ; ${SMS_VOTE.price} + coût d’un SMS selon votre opérateur`,
   },
   {
     icon: CalendarIcon,
@@ -66,7 +64,8 @@ const Vote = () => {
       </div>
       <div className="md:hidden">
         <Button href={smsLink}>
-          Envoyer <span>{message}</span> au <span>{number}</span>
+          Envoyer <span>{SMS_VOTE.keyword}</span> au{' '}
+          <span>{SMS_VOTE.number}</span>
         </Button>
       </div>
     </section>
