@@ -74,7 +74,7 @@
   /* Button system */
 
   .btn {
-    @apply px-6 py-5 md:px-7 md:py-6 uppercase tracking-wider text-sm md:text-base transition-all duration-300 ease-in-out;
+    @apply block px-6 py-5 md:px-7 md:py-6 uppercase tracking-wider text-sm md:text-base transition-all duration-300 ease-in-out;
   }
 
   .btn-primary {
