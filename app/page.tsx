@@ -6,6 +6,7 @@ import Gallery from '@/components/sections/Gallery';
 import Event from '@/components/sections/Event';
 import Engagement from '@/components/sections/Engagement';
 import Footer from '@/components/sections/Footer';
+import StickyVoteBar from '@/components/ui/StickyVoteBar';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Event />
       <Engagement />
       <Footer />
+      <StickyVoteBar />
     </main>
   );
 }
