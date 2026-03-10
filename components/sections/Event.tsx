@@ -52,7 +52,7 @@ const Event = () => {
           );
         })}
       </div>
-      <div className="mb-10 md:mb-12">
+      <div className="flex justify-center mb-10 md:mb-12">
         <Button
           href="https://www.billetweb.fr/election-miss-hauts-de-seine-2026"
           external
