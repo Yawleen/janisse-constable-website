@@ -14,7 +14,7 @@ const Footer = () => {
 
         <div className="flex items-center justify-center gap-8 mb-12">
           <Link
-            href="janisseconstable97@gmail.com"
+            href="mailto:janisseconstable97@gmail.com"
             className="contact-link"
             aria-label="Contact"
           >
