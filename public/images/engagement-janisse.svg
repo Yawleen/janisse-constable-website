@@ -1,0 +1,29 @@
+<svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+<style>
+.handwriting {
+  font-family: "Brush Script MT", "Segoe Script", "Snell Roundhand", cursive;
+  fill: #fff;
+}
+
+.quote {
+  font-size: 26px;
+  line-height: 1.5;
+}
+
+.signature {
+  font-size: 38px;
+}
+</style>
+
+<text x="450" y="120" text-anchor="middle" class="handwriting quote">
+  <tspan x="450" dy="0">« Je m’engage à utiliser ma voix pour inspirer,</tspan>
+  <tspan x="450" dy="36">soutenir et valoriser celles et ceux</tspan>
+  <tspan x="450" dy="36">qui n’osent pas encore croire en leurs rêves.</tspan>
+  <tspan x="450" dy="36">Parce que chaque geste de bienveillance</tspan>
+  <tspan x="450" dy="36">peut devenir une étincelle d’espoir. »</tspan>
+</text>
+
+<text x="450" y="360" text-anchor="middle" class="handwriting signature">
+  — Janisse
+</text>
+</svg>

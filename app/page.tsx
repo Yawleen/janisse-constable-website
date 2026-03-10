@@ -4,6 +4,7 @@ import Values from '@/components/sections/Values';
 import Vote from '@/components/sections/Vote';
 import Gallery from '@/components/sections/Gallery';
 import Event from '@/components/sections/Event';
+import Engagement from '@/components/sections/Engagement';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Vote />
       <Gallery />
       <Event />
+      <Engagement />
     </main>
   );
 }
