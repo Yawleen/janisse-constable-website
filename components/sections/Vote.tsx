@@ -62,7 +62,7 @@ const Vote = () => {
           );
         })}
       </div>
-      <div className="md:hidden">
+      <div className="flex justify-center md:hidden">
         <Button href={smsLink}>
           Envoyer <span>{SMS_VOTE.keyword}</span> au{' '}
           <span>{SMS_VOTE.number}</span>
