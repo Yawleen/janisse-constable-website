@@ -16,7 +16,7 @@ export default function Home() {
       <Values />
       {/* <Vote /> */}
       <Gallery />
-      <Event />
+      {/* <Event /> */}
       <Engagement />
       <Footer />
       {/* <StickyVoteBar /> */}
