@@ -12,13 +12,13 @@ import {
 import Image from 'next/image';
 
 const photoUrls: string[] = [
-  '/images/hero-bg.jpg',
-  '/images/image-gallery-1.jpg',
-  '/images/who-i-am.jpg',
-  '/images/who-i-am.jpg',
-  '/images/who-i-am.jpg',
-  '/images/who-i-am.jpg',
-  '/images/who-i-am.jpg',
+  '/images/image-gallery-1.png',
+  '/images/image-gallery-2.png',
+  '/images/image-gallery-3.png',
+  '/images/image-gallery-4.png',
+  '/images/image-gallery-5.png',
+  '/images/image-gallery-6.png',
+  '/images/image-gallery-7.png',
 ];
 
 const Gallery = () => {
