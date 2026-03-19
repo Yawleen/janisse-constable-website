@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <About />
       <Values />
-      <Vote />
+      {/* <Vote /> */}
       <Gallery />
       <Event />
       <Engagement />
