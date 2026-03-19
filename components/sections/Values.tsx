@@ -1,55 +1,21 @@
 import { ElementType } from 'react';
-import {
-  SparklesIcon,
-  CheckBadgeIcon,
-  SunIcon,
-  FaceSmileIcon,
-  UserGroupIcon,
-  ClipboardDocumentCheckIcon,
-  ArrowPathIcon,
-  HeartIcon,
-} from '@heroicons/react/24/outline';
+import { SunIcon, HeartIcon, GiftIcon } from '@heroicons/react/24/outline';
 import Value from '../ui/Value';
 
 const values: { icon: ElementType; title: string; description: string }[] = [
   {
-    icon: SparklesIcon,
-    title: 'Authenticité',
-    description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: CheckBadgeIcon,
-    title: 'Engagement',
-    description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
     icon: SunIcon,
-    title: 'Positivité',
-    description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: FaceSmileIcon,
-    title: 'Joie de vivre',
-    description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: UserGroupIcon,
-    title: 'Ouverture aux autres',
-    description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: ClipboardDocumentCheckIcon,
-    title: 'Discipline',
-    description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: ArrowPathIcon,
-    title: 'Résilience',
+    title: 'Positive',
     description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
     icon: HeartIcon,
-    title: 'Courtoisie',
+    title: 'Bienveillante',
+    description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    icon: GiftIcon,
+    title: 'Altruiste',
     description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
 ];
@@ -57,9 +23,8 @@ const values: { icon: ElementType; title: string; description: string }[] = [
 const Values = () => {
   return (
     <section className="bg-[#ebe6df] text-center">
-      <p className="subtitle">Mes valeurs</p>
       <h2>
-        Pourquoi voter <span className="block italic">pour moi ?</span>
+        Ce que mes proches disent <span className="block italic">de moi</span>
       </h2>
       <div className="grid max-w-6xl mx-auto gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 mt-12 md:mt-20">
         {values.map((value, index) => {
