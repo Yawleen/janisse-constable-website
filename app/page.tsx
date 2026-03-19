@@ -19,7 +19,7 @@ export default function Home() {
       <Event />
       <Engagement />
       <Footer />
-      <StickyVoteBar />
+      {/* <StickyVoteBar /> */}
     </main>
   );
 }
