@@ -4,8 +4,9 @@ const Hero = () => {
   return (
     <section className="relative py-18 md:py-26 text-primary-text min-h-screen flex flex-col justify-end">
       <Image
-        src="/images/hero-bg.jpg"
+        src="/images/hero-bg.jpeg"
         fill
+        objectPosition="center 15%"
         objectFit="cover"
         alt="Janisse Constable, candidate n°1 - Miss Hauts-de-Seine"
         className="z-0"
