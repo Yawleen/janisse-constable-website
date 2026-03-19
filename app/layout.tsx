@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     siteName: 'Janisse Constable',
     images: [
       {
-        url: '/og-image.jpg',
-        width: 1600,
-        height: 2400,
+        url: '/hero-bg-.jpeg',
+        width: 1200,
+        height: 630,
         alt: 'Janisse Constable - Candidate n°1 Miss Hauts-de-Seine',
       },
     ],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Janisse Constable – Candidate n°1 Miss Hauts-de-Seine',
     description: 'Candidate numéro 1 à Miss Hauts-de-Seine.',
-    images: ['/og-image.jpg'],
+    images: ['/hero-bg-.jpeg'],
   },
 };
 
