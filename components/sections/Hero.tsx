@@ -13,10 +13,10 @@ const Hero = () => {
         priority
       />
       <div className="image-overlay-dark"></div>
-      <p className="text-xs md:text-sm uppercase tracking-[0.3em] mb-3 z-1">
+      <p className="text-xs md:text-sm uppercase tracking-[0.3em] mb-3 z-2">
         Candidate n°1 - Miss Hauts-de-Seine
       </p>
-      <h1 className="relative z-3">
+      <h1 className="relative z-2">
         Janisse <span className="block italic">Constable</span>
       </h1>
     </section>
