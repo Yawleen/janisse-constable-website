@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
 import './globals.css';
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+
 const serif = Playfair_Display({
   variable: '--font-serif',
   weight: ['400', '700'],
@@ -22,20 +24,20 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://janisseconstable.fr'),
+  metadataBase: new URL(SITE_URL),
   title: 'Janisse Constable - Candidate n°1 Miss Hauts-de-Seine',
   description:
     "Découvrez le parcours de Janisse Constable, Candidate numéro 1 à Miss Hauts-de-Seine. Soutenez sa candidature et assistez à l'élection.",
   openGraph: {
     title: 'Janisse Constable – Candidate n°1 Miss Hauts-de-Seine',
     description: 'Découvrez son parcours et soutenez sa candidature.',
-    url: 'https://janisseconstable.fr',
+    url: SITE_URL,
     siteName: 'Janisse Constable',
     images: [
       {
-        url: '/og-image.jpg',
-        width: 1600,
-        height: 2400,
+        url: '/hero-bg-.jpeg',
+        width: 1200,
+        height: 630,
         alt: 'Janisse Constable - Candidate n°1 Miss Hauts-de-Seine',
       },
     ],
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Janisse Constable – Candidate n°1 Miss Hauts-de-Seine',
     description: 'Candidate numéro 1 à Miss Hauts-de-Seine.',
-    images: ['/og-image.jpg'],
+    images: ['/hero-bg-.jpeg'],
   },
 };
 
