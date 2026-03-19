@@ -34,7 +34,6 @@ const voteInfo: {
         Les votes sont ouverts jusqu&apos;au <strong>18 avril</strong>.
       </>
     ),
-    // info: "Chaque vote compte, ne tardez pas !"
   },
 ];
 
@@ -44,8 +43,8 @@ const Vote = () => {
       <p className="subtitle">Soutien</p>
       <h2>Comment voter ?</h2>
       <p className="mb-12 md:mb-20">
-        Votre vote compte énormément. <br /> Chaque SMS est un pas de plus vers
-        la couronne.
+        Votre vote compte énormément. <br /> Un petit vote peut faire la
+        différence.
       </p>
       <div className="grid grid-cols-1 gap-10 max-w-4xl mx-auto md:grid-cols-2 mb-16 md:mb-20">
         {voteInfo.map((info, index) => {
