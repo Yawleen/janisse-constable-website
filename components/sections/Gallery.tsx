@@ -19,6 +19,8 @@ const photoUrls: string[] = [
   '/images/image-gallery-5.png',
   '/images/image-gallery-6.png',
   '/images/image-gallery-7.png',
+  '/images/image-gallery-8.png',
+  '/images/image-gallery-9.png',
 ];
 
 const Gallery = () => {
