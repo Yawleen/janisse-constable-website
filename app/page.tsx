@@ -3,7 +3,6 @@ import About from '@/components/sections/About';
 import Values from '@/components/sections/Values';
 import Vote from '@/components/sections/Vote';
 import Gallery from '@/components/sections/Gallery';
-import Event from '@/components/sections/Event';
 import Engagement from '@/components/sections/Engagement';
 import Footer from '@/components/sections/Footer';
 import StickyVoteBar from '@/components/ui/StickyVoteBar';
@@ -16,7 +15,6 @@ export default function Home() {
       <Values />
       {/* <Vote /> */}
       <Gallery />
-      {/* <Event /> */}
       <Engagement />
       <Footer />
       {/* <StickyVoteBar /> */}
