@@ -17,10 +17,10 @@ const About = () => {
         <h2>Qui suis-je ?</h2>
         <div className="space-y-5">
           <p>
-            J&apos;ai 25 ans et j&apos;ai grandi entre cultures guyanaise et
-            polonaise, avec un parcours universitaire en France et en Floride.
-            Diplômée d&apos;un master en droit et éthique des affaires, je
-            travaille aujourd&apos;hui en Compliance.
+            J&apos;ai 25 ans et j&apos;ai grandi partagée entre culture
+            francilienne et guyanaise, avec un parcours universitaire en France
+            et en Floride. Diplômée d&apos;un Master en droit et éthique des
+            affaires, je travaille aujourd&apos;hui en Compliance.
           </p>
           <p>
             Originaire du Val d&apos;Oise et installée dans les Hauts-de-Seine,
