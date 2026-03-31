@@ -31,7 +31,8 @@ const voteInfo: {
     title: 'Date limite',
     description: (
       <>
-        Les votes sont ouverts jusqu&apos;au <strong>18 avril</strong>.
+        Les votes sont ouverts jusqu&apos;au{' '}
+        <strong>samedi 18 avril, 20h</strong>.
       </>
     ),
   },
