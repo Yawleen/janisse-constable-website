@@ -5,7 +5,7 @@ const About = () => {
     <section className="flex flex-col gap-10 lg:flex-row lg:justify-center lg:gap-20">
       <div className="relative w-full self-center max-w-md aspect-3/4 md:min-w-sm">
         <Image
-          src="/images/who-i-am.jpg"
+          src="/images/who-i-am.png"
           fill
           objectFit="cover"
           alt="Janisse Constable portrait"
