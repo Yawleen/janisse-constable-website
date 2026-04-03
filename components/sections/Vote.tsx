@@ -3,8 +3,8 @@ import {
   CalendarIcon,
   DevicePhoneMobileIcon,
 } from '@heroicons/react/24/outline';
-import VoteInfo from '../ui/VoteInfo';
-import Button from '../ui/LinkButton';
+import VoteInfo from '../VoteInfo';
+import Button from '../LinkButton';
 import { SMS_VOTE } from '@/constants/vote';
 
 const smsLink = `sms:${SMS_VOTE.number}?body=${encodeURIComponent(SMS_VOTE.keyword)}`;
