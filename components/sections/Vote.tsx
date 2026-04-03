@@ -20,19 +20,21 @@ const voteInfo: {
     title: 'Votez par SMS',
     description: (
       <>
-        Envoyez <strong>{SMS_VOTE.keyword}</strong> par SMS au{' '}
-        <strong>{SMS_VOTE.number}</strong> pour me soutenir.
+        Très prochainement, vous pourrez voter pour moi par SMS. <br /> Restez à
+        l’affût ! <br />
+        {/* Envoyez <strong>{SMS_VOTE.keyword}</strong> par SMS au{' '}
+        <strong>{SMS_VOTE.number}</strong> pour me soutenir. */}
       </>
     ),
     info: `1 SMS = 1 vote ; ${SMS_VOTE.price} + coût d’un SMS selon votre opérateur`,
   },
   {
     icon: CalendarIcon,
-    title: 'Date limite',
+    title: 'Date de vote',
     description: (
       <>
-        Les votes sont ouverts jusqu&apos;au{' '}
-        <strong>samedi 18 avril, 20h</strong>.
+        Les votes seront ouverts du <strong>lundi 13 avril, 12h</strong>{' '}
+        jusqu&apos;au <strong>samedi 18 avril, 20h</strong>.
       </>
     ),
   },
@@ -62,12 +64,12 @@ const Vote = () => {
           );
         })}
       </div>
-      <div className="flex justify-center md:hidden">
+      {/* <div className="flex justify-center md:hidden">
         <Button href={smsLink}>
           Envoyer <span>{SMS_VOTE.keyword}</span> au{' '}
           <span>{SMS_VOTE.number}</span>
         </Button>
-      </div>
+      </div> */}
     </section>
   );
 };
