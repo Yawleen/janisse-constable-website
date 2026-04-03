@@ -53,6 +53,18 @@ const Footer = () => {
 
         <p className="text-xs">
           © 2026 Janisse Constable. Tous droits réservés.
+          <br />
+          <span className="italic">
+            Site réalisé par{' '}
+            <Link
+              href="https://fr.linkedin.com/in/constable-yolene"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Yolène Constable
+            </Link>
+            .
+          </span>
         </p>
       </div>
     </footer>
