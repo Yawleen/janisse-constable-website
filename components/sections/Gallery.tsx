@@ -42,9 +42,7 @@ const Gallery = () => {
   }, [api]);
 
   return (
-    <section
-    // className="bg-[#ebe6df]"
-    >
+    <section className="bg-[#ebe6df]">
       <div className="max-w-4xl mx-auto">
         <p className="subtitle">Portfolio</p>
         <h2>
