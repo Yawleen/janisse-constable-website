@@ -5,7 +5,7 @@ import Vote from '@/components/sections/Vote';
 import Gallery from '@/components/sections/Gallery';
 import Engagement from '@/components/sections/Engagement';
 import Footer from '@/components/sections/Footer';
-import StickyVoteBar from '@/components/ui/StickyVoteBar';
+import StickyVoteBar from '@/components/StickyVoteBar';
 
 export default function Home() {
   return (

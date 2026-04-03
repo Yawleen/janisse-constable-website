@@ -1,6 +1,6 @@
 import { ElementType } from 'react';
 import { SunIcon, HeartIcon, GiftIcon } from '@heroicons/react/24/outline';
-import Value from '../ui/Value';
+import Value from '../Value';
 
 const values: { icon: ElementType; title: string; description: string }[] = [
   {
