@@ -10,6 +10,7 @@ import {
   type CarouselApi,
 } from '@/components/ui/carousel';
 import Image from 'next/image';
+import Autoplay from 'embla-carousel-autoplay';
 
 const photoUrls: string[] = [
   '/images/image-gallery-1.png',
@@ -51,6 +52,11 @@ const Gallery = () => {
       </div>
       <Carousel
         setApi={setApi}
+        plugins={[
+          Autoplay({
+            delay: 3000,
+          }),
+        ]}
         className="w-full max-w-2xl mx-auto mt-10 md:mt-14"
       >
         <CarouselContent>
