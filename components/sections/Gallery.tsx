@@ -10,20 +10,66 @@ import {
   type CarouselApi,
 } from '@/components/ui/carousel';
 import Image from 'next/image';
+import Autoplay from 'embla-carousel-autoplay';
+import Link from 'next/link';
+import { Instagram } from 'lucide-react';
 
-const photoUrls: string[] = [
-  '/images/image-gallery-1.png',
-  '/images/image-gallery-2.png',
-  '/images/image-gallery-3.png',
-  '/images/image-gallery-4.png',
-  '/images/image-gallery-5.png',
-  '/images/image-gallery-6.png',
-  '/images/image-gallery-7.png',
-  '/images/image-gallery-8.png',
-  '/images/image-gallery-9.png',
-  '/images/image-gallery-10.png',
-  '/images/image-gallery-11.png',
-];
+const photoUrls: { url: string; instagram?: { name: string; url: string } }[] =
+  [
+    {
+      url: '/images/image-gallery-1.png',
+      instagram: {
+        name: 'donhovann_visuals',
+        url: 'https://www.instagram.com/donhovann_visuals/?hl=en',
+      },
+    },
+    {
+      url: '/images/image-gallery-2.png',
+      instagram: {
+        name: 'donhovann_visuals',
+        url: 'https://www.instagram.com/donhovann_visuals/?hl=en',
+      },
+    },
+    {
+      url: '/images/image-gallery-3.png',
+      instagram: {
+        name: 'Ledockernoir',
+        url: 'https://www.instagram.com/ledockernoir/?hl=en',
+      },
+    },
+    {
+      url: '/images/image-gallery-4.png',
+      instagram: {
+        name: 'donhovann_visuals',
+        url: 'https://www.instagram.com/donhovann_visuals/?hl=en',
+      },
+    },
+    {
+      url: '/images/image-gallery-5.png',
+      instagram: {
+        name: 'Ledockernoir',
+        url: 'https://www.instagram.com/ledockernoir/?hl=en',
+      },
+    },
+    {
+      url: '/images/image-gallery-6.png',
+      instagram: {
+        name: 'deep_focuss_',
+        url: 'https://www.instagram.com/deep_focuss_?igsh=MTlzaGFybmx3M201bg%3D%3D',
+      },
+    },
+    {
+      url: '/images/image-gallery-7.png',
+      instagram: {
+        name: 'Ledockernoir',
+        url: 'https://www.instagram.com/ledockernoir/?hl=en',
+      },
+    },
+    { url: '/images/image-gallery-8.png' },
+    { url: '/images/image-gallery-9.png' },
+    { url: '/images/image-gallery-10.png' },
+    { url: '/images/image-gallery-11.png' },
+  ];
 
 const Gallery = () => {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -51,19 +97,38 @@ const Gallery = () => {
       </div>
       <Carousel
         setApi={setApi}
+        plugins={[
+          Autoplay({
+            delay: 3000,
+          }),
+        ]}
         className="w-full max-w-2xl mx-auto mt-10 md:mt-14"
       >
         <CarouselContent>
-          {photoUrls.map((url, index) => (
+          {photoUrls.map((photoInfo, index) => (
             <CarouselItem key={index}>
               <div className="relative aspect-3/4">
                 <Image
-                  src={url}
+                  src={photoInfo.url}
                   alt={`Photo n°${index + 1} Janisse Constable`}
                   layout="fill"
                   objectFit="cover"
                   loading="lazy"
                 />
+                {photoInfo.instagram && (
+                  <Link
+                    href={photoInfo.instagram.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    className={`absolute right-2 bottom-2 ${index === 5 ? 'text-secondary-text' : 'text-primary-text'} font-bold flex items-center gap-1`}
+                  >
+                    <Instagram size={15} strokeWidth={2.5} />
+                    <p className="text-[8px] md:text-base">
+                      {photoInfo.instagram.name}
+                    </p>
+                  </Link>
+                )}
               </div>
             </CarouselItem>
           ))}
