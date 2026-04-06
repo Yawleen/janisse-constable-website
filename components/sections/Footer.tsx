@@ -21,7 +21,7 @@ const Footer = () => {
             <Mail size={20} strokeWidth={1.2} />
           </Link>
           <Link
-            href="https://www.instagram.com/janisse_cstbl/"
+            href="https://www.instagram.com/janisse_ctbl/?hl=en"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-link"
