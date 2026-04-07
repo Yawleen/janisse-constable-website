@@ -107,7 +107,7 @@ const Gallery = () => {
         <CarouselContent>
           {photoUrls.map((photoInfo, index) => (
             <CarouselItem key={index}>
-              <div className="relative aspect-3/4">
+              <div className="relative max-h-162.5 mx-auto aspect-3/4">
                 <Image
                   src={photoInfo.url}
                   alt={`Photo n°${index + 1} Janisse Constable`}
@@ -133,8 +133,8 @@ const Gallery = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="-left-4 md:-left-20 md:size-10 cursor-pointer" />
-        <CarouselNext className="-right-4 md:-right-20 md:size-10 cursor-pointer" />
+        <CarouselPrevious className="-left-4 md:size-10 cursor-pointer" />
+        <CarouselNext className="-right-4 md:size-10 cursor-pointer" />
       </Carousel>
       <p className="mt-4 md:mt-8 font-bold text-center text-sm md:text-base">
         {current} <span className="font-normal">sur</span> {count}
