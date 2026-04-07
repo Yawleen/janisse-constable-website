@@ -4,10 +4,8 @@ import {
   DevicePhoneMobileIcon,
 } from '@heroicons/react/24/outline';
 import VoteInfo from '../VoteInfo';
-import Button from '../LinkButton';
+import VoteByRegion from './VoteByRegion';
 import { SMS_VOTE } from '@/constants/vote';
-
-const smsLink = `sms:${SMS_VOTE.number}?body=${encodeURIComponent(SMS_VOTE.keyword)}`;
 
 const voteInfo: {
   icon: ElementType;
@@ -20,21 +18,36 @@ const voteInfo: {
     title: 'Votez par SMS',
     description: (
       <>
-        Très prochainement, vous pourrez voter pour moi par SMS. <br /> Restez à
-        l’affût ! <br />
-        {/* Envoyez <strong>{SMS_VOTE.keyword}</strong> par SMS au{' '}
-        <strong>{SMS_VOTE.number}</strong> pour me soutenir. */}
+        <p className='md:hidden'>
+          <strong>Sélectionnez votre région ci-dessous</strong> et{' '}
+          <strong>cliquez sur le bouton &quot;Voter&quot;</strong> pour me soutenir.
+        </p>
+        <p className='hidden md:flex flex-col gap-2'>
+          <span>Envoyez <strong>{SMS_VOTE.keyword}</strong></span>
+          au
+          <span className='flex gap-6'>
+            <span className='max-w-25'>
+              <strong>{SMS_VOTE.regions.france.number}</strong> <span className='region'>pour voter depuis la <strong>{SMS_VOTE.regions.france.label}</strong></span>
+            </span>
+            <span className='max-w-25'>
+              <strong>{SMS_VOTE.regions.reunion.number}</strong> <span className='region'>pour voter depuis la <strong>{SMS_VOTE.regions.reunion.label}</strong></span>
+            </span>
+            <span className='max-w-25'>
+              <strong>{SMS_VOTE.regions.antilles.number}</strong> <span className='region'>pour voter depuis les <strong>{SMS_VOTE.regions.antilles.label}</strong></span>
+            </span>
+          </span>
+        </p>
       </>
     ),
     info: `1 SMS = 1 vote ; ${SMS_VOTE.price} + coût d’un SMS selon votre opérateur`,
   },
   {
     icon: CalendarIcon,
-    title: 'Date de vote',
+    title: 'Date limite',
     description: (
       <>
-        Les votes seront ouverts du <strong>lundi 13 avril, 12h</strong>{' '}
-        jusqu&apos;au <strong>samedi 18 avril, 20h</strong>.
+        Les votes sont ouverts jusqu&apos;au{' '}
+        <strong>samedi 18 avril, 20h</strong>.
       </>
     ),
   },
@@ -42,14 +55,14 @@ const voteInfo: {
 
 const Vote = () => {
   return (
-    <section className="text-center">
+    <section className="relative text-center">
       <p className="subtitle">Soutien</p>
       <h2>Comment voter ?</h2>
       <p className="mb-12 md:mb-20">
         Votre vote compte énormément. <br /> Un petit vote peut faire la
         différence.
       </p>
-      <div className="grid grid-cols-1 gap-10 max-w-4xl mx-auto md:grid-cols-2 mb-16 md:mb-20">
+      <div className="grid grid-cols-1 gap-10 max-w-4xl mx-auto md:grid-cols-2 mb-14 md:mb-20">
         {voteInfo.map((info, index) => {
           const Icon = info.icon;
 
@@ -64,12 +77,7 @@ const Vote = () => {
           );
         })}
       </div>
-      {/* <div className="flex justify-center md:hidden">
-        <Button href={smsLink}>
-          Envoyer <span>{SMS_VOTE.keyword}</span> au{' '}
-          <span>{SMS_VOTE.number}</span>
-        </Button>
-      </div> */}
+      <VoteByRegion />
     </section>
   );
 };

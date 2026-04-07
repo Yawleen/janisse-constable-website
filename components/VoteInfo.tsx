@@ -14,7 +14,7 @@ const VoteInfo = ({ icon, title, description, info }: voteInfoProps) => {
         {icon}
       </div>
       <p className="text-xl md:text-2xl font-bold mb-3">{title}</p>
-      <p className="text-sm md:text-base mb-3">{description}</p>
+      <div className="text-sm md:text-base mb-3">{description}</div>
       {info && <p className="italic text-xs">{info}</p>}
     </div>
   );

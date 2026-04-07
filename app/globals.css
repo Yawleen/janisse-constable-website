@@ -121,4 +121,9 @@
   .contact-link {
     @apply text-primary-text/50 hover:text-primary-text transition-colors duration-300;
   }
+
+  /* Vote section */
+  .region {
+    @apply block text-xs leading-tight;
+  }
 }
