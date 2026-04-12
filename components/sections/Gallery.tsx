@@ -26,6 +26,12 @@ const images: {
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
   },
   {
+    path: '/images/image-gallery-13.png',
+    photoCredit: 'donhovann_visuals',
+    instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
+    light: true,
+  },
+  {
     path: '/images/image-gallery-2.png',
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
@@ -34,6 +40,11 @@ const images: {
     path: '/images/image-gallery-3.png',
     photoCredit: 'Ledockernoir',
     instagramUrl: 'https://www.instagram.com/ledockernoir/?hl=en',
+  },
+  {
+    path: '/images/image-gallery-12.png',
+    photoCredit: 'donhovann_visuals',
+    instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
   },
   {
     path: '/images/image-gallery-4.png',
