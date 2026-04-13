@@ -17,7 +17,7 @@ export default function Home() {
       <Gallery />
       <Engagement />
       <Footer />
-      {/* <StickyVoteBar /> */}
+      <StickyVoteBar />
     </main>
   );
 }

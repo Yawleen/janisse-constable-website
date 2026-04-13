@@ -2,9 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Button from './LinkButton';
-import { SMS_VOTE } from '@/constants/vote';
-
-const smsLink = `sms:${SMS_VOTE.number}?body=${encodeURIComponent(SMS_VOTE.keyword)}`;
 
 const StickyVoteBar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,22 +21,12 @@ const StickyVoteBar = () => {
         isVisible ? 'translate-y-0' : 'translate-y-full'
       }`}
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4">
-        <p className="hidden lg:block text-base text-left">
+      <div className="max-w-7xl mx-auto flex justify-center md:justify-between items-center gap-4">
+        <p className="hidden md:block text-base text-left">
           Soutenez Janisse Constable — Candidate n°1 Miss Hauts-de-Seine 2026
         </p>
 
-        <div className="flex items-center gap-6 mx-auto lg:ml-auto lg:mr-0">
-          <p className="text-primary-text/70 text-sm md:text-base text-center lg:text-right">
-            Envoyez{' '}
-            <strong className="text-primary-text">{SMS_VOTE.keyword}</strong> au{' '}
-            <strong className="text-primary-text">{SMS_VOTE.number}</strong>
-          </p>
-
-          <div className="md:hidden">
-            <Button href={smsLink}>Voter</Button>
-          </div>
-        </div>
+        <Button href="#vote">Voter</Button>
       </div>
     </div>
   );
