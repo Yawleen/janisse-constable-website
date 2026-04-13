@@ -8,7 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import Button from '../LinkButton';
+import Button from './LinkButton';
 import { SMS_VOTE } from '@/constants/vote';
 import { useState } from 'react';
 import { sendGAEvent } from '@next/third-parties/google';
@@ -25,12 +25,12 @@ const VoteByRegion = () => {
 
   const handleSelect = (value: string) => setSelectedRegion(value);
 
-  // const handleClick = () => {
-  //   sendGAEvent('event', 'cta_click', {
-  //     button_name: 'vote_by_region',
-  //     page_location: window.location.pathname,
-  //   });
-  // };
+  const handleClick = () => {
+    sendGAEvent('event', 'cta_click', {
+      button_name: 'vote_by_region',
+      page_location: window.location.pathname,
+    });
+  };
 
   return (
     <div
@@ -67,7 +67,7 @@ const VoteByRegion = () => {
         </strong>
       </p>
       <Button
-        // onClick={handleClick}
+        onClick={handleClick}
         href={`sms:${SMS_VOTE.regions[selectedRegion as keyof typeof SMS_VOTE.regions].number}?body=${encodeURIComponent(SMS_VOTE.keyword)}`}
       >
         Voter

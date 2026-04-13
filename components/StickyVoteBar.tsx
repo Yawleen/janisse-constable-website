@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Button from './LinkButton';
+import CookieBanner from './CookieBanner';
 
 const StickyVoteBar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,6 +29,7 @@ const StickyVoteBar = () => {
 
         <Button href="#vote">Voter</Button>
       </div>
+      <CookieBanner />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import {
   DevicePhoneMobileIcon,
 } from '@heroicons/react/24/outline';
 import VoteInfo from '../VoteInfo';
-import VoteByRegion from './VoteByRegion';
+import VoteByRegion from '../VoteByRegion';
 import { SMS_VOTE } from '@/constants/vote';
 
 const voteInfo: {
@@ -18,22 +18,37 @@ const voteInfo: {
     title: 'Votez par SMS',
     description: (
       <>
-        <p className='md:hidden'>
+        <p className="md:hidden">
           <strong>Sélectionnez votre région ci-dessous</strong> et{' '}
-          <strong>cliquez sur le bouton &quot;Voter&quot;</strong> pour me soutenir.
+          <strong>cliquez sur le bouton &quot;Voter&quot;</strong> pour me
+          soutenir.
         </p>
-        <p className='hidden md:flex flex-col gap-2'>
-          <span>Envoyez <strong>{SMS_VOTE.keyword}</strong></span>
+        <p className="hidden md:flex flex-col gap-2">
+          <span>
+            Envoyez <strong>{SMS_VOTE.keyword}</strong>
+          </span>
           au
-          <span className='flex gap-6'>
-            <span className='max-w-25'>
-              <strong>{SMS_VOTE.regions.france.number}</strong> <span className='region'>pour voter depuis la <strong>{SMS_VOTE.regions.france.label}</strong></span>
+          <span className="flex gap-6">
+            <span className="max-w-25">
+              <strong>{SMS_VOTE.regions.france.number}</strong>{' '}
+              <span className="region">
+                pour voter depuis la{' '}
+                <strong>{SMS_VOTE.regions.france.label}</strong>
+              </span>
             </span>
-            <span className='max-w-25'>
-              <strong>{SMS_VOTE.regions.reunion.number}</strong> <span className='region'>pour voter depuis la <strong>{SMS_VOTE.regions.reunion.label}</strong></span>
+            <span className="max-w-25">
+              <strong>{SMS_VOTE.regions.reunion.number}</strong>{' '}
+              <span className="region">
+                pour voter depuis la{' '}
+                <strong>{SMS_VOTE.regions.reunion.label}</strong>
+              </span>
             </span>
-            <span className='max-w-25'>
-              <strong>{SMS_VOTE.regions.antilles.number}</strong> <span className='region'>pour voter depuis les <strong>{SMS_VOTE.regions.antilles.label}</strong></span>
+            <span className="max-w-25">
+              <strong>{SMS_VOTE.regions.antilles.number}</strong>{' '}
+              <span className="region">
+                pour voter depuis les{' '}
+                <strong>{SMS_VOTE.regions.antilles.label}</strong>
+              </span>
             </span>
           </span>
         </p>
