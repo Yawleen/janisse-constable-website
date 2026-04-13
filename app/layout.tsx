@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
 import './globals.css';
-import { GoogleAnalytics } from '@next/third-parties/google';
+import { GAWrapper } from '@/components/GAWrapper';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
@@ -64,7 +64,7 @@ export default function RootLayout({
         className={`${serif.variable} ${sans.variable} font-sans antialiased`}
       >
         {children}
-        {/* <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} /> */}
+        <GAWrapper />
       </body>
     </html>
   );
