@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Button from './LinkButton';
 import CookieBanner from './CookieBanner';
 
 const StickyVoteBar = () => {
@@ -22,12 +21,10 @@ const StickyVoteBar = () => {
         isVisible ? 'translate-y-0' : 'translate-y-full'
       }`}
     >
-      <div className="max-w-7xl mx-auto flex justify-center md:justify-between items-center gap-4">
-        <p className="hidden md:block text-base text-left">
+      <div className="max-w-7xl mx-auto flex justify-center">
+        <p className="text-sm md:text-base text-center">
           Soutenez Janisse Constable — Candidate n°1 Miss Hauts-de-Seine 2026
         </p>
-
-        <Button href="#vote">Voter</Button>
       </div>
       {/* <CookieBanner /> */}
     </div>
