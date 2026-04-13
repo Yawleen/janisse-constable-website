@@ -64,7 +64,7 @@ export default function RootLayout({
         className={`${serif.variable} ${sans.variable} font-sans antialiased`}
       >
         {children}
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
+        {/* <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} /> */}
       </body>
     </html>
   );
