@@ -2,7 +2,7 @@ export const SMS_VOTE = {
   keyword: 'HDS1',
   regions: {
     france: {
-      label: "France métropolitaine",
+      label: 'France métropolitaine',
       number: '71515',
     },
     reunion: {
@@ -10,8 +10,8 @@ export const SMS_VOTE = {
       number: '7010',
     },
     antilles: {
-      label: 'Antilles',
-      number: '97777',
+      label: 'Antilles françaises',
+      number: '71515',
     },
   },
   price: '0,99€',
