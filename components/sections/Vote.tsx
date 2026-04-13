@@ -54,7 +54,7 @@ const voteInfo: {
         </p>
       </>
     ),
-    info: `1 SMS = 1 vote ; ${SMS_VOTE.price} + coût d’un SMS selon votre opérateur`,
+    info: `1 SMS = 1 vote ; jusqu'à 50 votes / jour ; ${SMS_VOTE.price} + coût d’un SMS selon votre opérateur`,
   },
   {
     icon: CalendarIcon,
