@@ -12,6 +12,7 @@ import Button from './LinkButton';
 import { SMS_VOTE } from '@/constants/vote';
 import { useState } from 'react';
 import { sendGAEvent } from '@next/third-parties/google';
+import { useCookieConsent } from '@/lib/useCookieConsent';
 
 const items: { label: string; value: string }[] = Object.entries(
   SMS_VOTE.regions
@@ -22,10 +23,13 @@ const items: { label: string; value: string }[] = Object.entries(
 
 const VoteByRegion = () => {
   const [selectedRegion, setSelectedRegion] = useState<string>(items[0].value);
+  const { consent } = useCookieConsent();
 
   const handleSelect = (value: string) => setSelectedRegion(value);
 
   const handleClick = () => {
+    if (consent !== true) return;
+
     sendGAEvent('event', 'cta_click', {
       button_name: 'vote_by_region',
       page_location: window.location.pathname,
