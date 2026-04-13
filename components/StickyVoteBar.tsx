@@ -29,7 +29,7 @@ const StickyVoteBar = () => {
 
         <Button href="#vote">Voter</Button>
       </div>
-      <CookieBanner />
+      {/* <CookieBanner /> */}
     </div>
   );
 };
