@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
 import './globals.css';
 import { GAWrapper } from '@/components/GAWrapper';
+import { Analytics } from '@vercel/analytics/next';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
@@ -64,6 +65,7 @@ export default function RootLayout({
         className={`${serif.variable} ${sans.variable} font-sans antialiased`}
       >
         {children}
+        <Analytics />
         <GAWrapper />
       </body>
     </html>
