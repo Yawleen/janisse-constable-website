@@ -8,13 +8,13 @@ const Hero = () => {
         fill
         objectPosition="center 15%"
         objectFit="cover"
-        alt="Janisse Constable, candidate n°1 - Miss Hauts-de-Seine"
+        alt="Janisse Constable, Miss Hauts-de-Seine 2026"
         className="z-0"
         priority
       />
       <div className="image-overlay-dark"></div>
       <p className="text-base md:text-lg uppercase tracking-[0.3em] mb-3 z-2">
-        Candidate n°1 - Miss Hauts-de-Seine
+        Miss Hauts-de-Seine 2026
       </p>
       <h1 className="relative z-2">
         Janisse <span className="block italic">Constable</span>
