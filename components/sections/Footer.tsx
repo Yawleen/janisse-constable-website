@@ -9,7 +9,7 @@ const Footer = () => {
           Janisse <span className="italic">Constable</span>
         </h2>
         <p className="text-primary-text/60 text-xs tracking-[0.3em] uppercase mb-12">
-          Candidate n°1 — Miss Hauts-de-Seine
+          Miss Hauts-de-Seine 2026
         </p>
 
         <div className="flex items-center justify-center gap-8 mb-12">
