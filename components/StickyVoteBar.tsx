@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import CookieBanner from './CookieBanner';
 
 const StickyVoteBar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,7 +25,6 @@ const StickyVoteBar = () => {
           Soutenez Janisse Constable — Candidate n°1 Miss Hauts-de-Seine 2026
         </p>
       </div>
-      {/* <CookieBanner /> */}
     </div>
   );
 };
