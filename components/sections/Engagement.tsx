@@ -9,7 +9,7 @@ const Engagement = () => {
         </p>
         <Image
           src="/images/engagement-text.svg"
-          alt="Janisse Constable, candidate n°1 - Miss Hauts-de-Seine"
+          alt="Janisse Constable, Miss Hauts-de-Seine 2026"
           width={900}
           height={900}
           className="w-full"
