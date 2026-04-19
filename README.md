@@ -2,7 +2,7 @@
 
 ## 📌 Description
 
-Ce projet consiste en la conception et le développement d’un site vitrine pour accompagner la candidature de Janisse à l’élection Miss Hauts-de-Seine 2026.
+Ce projet consiste en la conception et le développement d’un site vitrine pour accompagner la candidature de Janisse Constable à l’élection Miss Hauts-de-Seine 2026.
 
 L’objectif principal était de créer une présence digitale forte, en mettant en valeur son parcours, ses valeurs et son univers à travers une expérience utilisateur fluide, esthétique et engageante.
 
