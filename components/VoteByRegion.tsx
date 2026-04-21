@@ -8,7 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import Button from './LinkButton';
+import LinkButton from './LinkButton';
 import { SMS_VOTE } from '@/constants/vote';
 import { useState } from 'react';
 
@@ -58,11 +58,11 @@ const VoteByRegion = () => {
           .
         </strong>
       </p>
-      <Button
+      <LinkButton
         href={`sms:${SMS_VOTE.regions[selectedRegion as keyof typeof SMS_VOTE.regions].number}?body=${encodeURIComponent(SMS_VOTE.keyword)}`}
       >
         Voter
-      </Button>
+      </LinkButton>
     </div>
   );
 };
