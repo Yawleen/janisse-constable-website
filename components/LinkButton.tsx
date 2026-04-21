@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { ReactNode } from 'react';
 
 type ButtonProps = {
@@ -8,7 +9,7 @@ type ButtonProps = {
   onClick?: () => void;
 };
 
-const Button = ({
+const LinkButton = ({
   href,
   children,
   external = false,
@@ -16,15 +17,15 @@ const Button = ({
   variant = 'solid',
 }: ButtonProps) => {
   return (
-    <a
+    <Link
       onClick={onClick}
       className={`btn ${variant === 'solid' ? 'btn-primary' : 'btn-outline'}`}
       href={href}
       target={external ? '_blank' : undefined}
     >
       {children}
-    </a>
+    </Link>
   );
 };
 
-export default Button;
+export default LinkButton;
