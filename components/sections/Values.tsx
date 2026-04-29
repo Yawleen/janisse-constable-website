@@ -35,7 +35,7 @@ const testimonials: {
 
 const Values = () => {
   return (
-    <section className="bg-[#ebe6df] text-center">
+    <section className="text-center">
       <p className="subtitle">Témoignages</p>
       <h2>
         Ce que mes proches disent <span className="block italic">de moi</span>
