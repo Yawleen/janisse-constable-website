@@ -22,7 +22,7 @@ const Value = ({
           src={image}
           alt={`Photo de ${author}, ${relation.toLowerCase()} de Janisse`}
           fill
-          objectFit="cover"
+          className="object-cover"
         />
       </div>
       <span className="inline-block text-xs md:text-sm uppercase tracking-[0.2em] text-primary mb-2 md:mb-4 border border-primary/30 px-4 py-1.5 rounded-full">
