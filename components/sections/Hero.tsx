@@ -6,10 +6,8 @@ const Hero = () => {
       <Image
         src="/images/hero-bg.jpeg"
         fill
-        objectPosition="center 15%"
-        objectFit="cover"
         alt="Janisse Constable, Miss Hauts-de-Seine 2026"
-        className="z-0"
+        className="z-0 object-cover object-[50%_15%]"
         priority
       />
       <div className="image-overlay-dark"></div>

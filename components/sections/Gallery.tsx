@@ -92,7 +92,7 @@ const Gallery = () => {
 
   return (
     <section>
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <p className="subtitle">Portfolio</p>
         <h2>
           Galerie <span className="italic">éditoriale</span>
@@ -114,8 +114,8 @@ const Gallery = () => {
                 <Image
                   src={photoInfo.path}
                   alt={`Photo n°${index + 1} Janisse Constable`}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  className="object-cover"
                   loading="lazy"
                 />
                 {photoInfo?.instagramUrl && photoInfo?.photoCredit && (
