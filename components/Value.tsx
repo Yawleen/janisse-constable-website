@@ -22,6 +22,7 @@ const Value = ({
           src={image}
           alt={`Photo de ${author}, ${relation.toLowerCase()} de Janisse`}
           fill
+          sizes="(max-width: 768px) 96px, 112px"
           className="object-cover"
         />
       </div>

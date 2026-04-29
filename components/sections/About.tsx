@@ -7,6 +7,7 @@ const About = () => {
         <Image
           src="/images/who-i-am.png"
           fill
+          sizes="(max-width: 768px) 100vw, 448px"
           className="object-cover"
           alt="Janisse Constable portrait"
           loading="lazy"

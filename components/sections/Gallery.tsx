@@ -115,6 +115,7 @@ const Gallery = () => {
                   src={photoInfo.path}
                   alt={`Photo n°${index + 1} Janisse Constable`}
                   fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
                   className="object-cover"
                   loading="lazy"
                 />
