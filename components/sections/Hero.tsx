@@ -6,7 +6,7 @@ const Hero = () => {
       <Image
         src="/images/image-victory-3.png"
         fill
-        sizes="(max-width: 768px) 100vw, 50vw"
+        sizes="100vw"
         alt="Janisse Constable, Miss Hauts-de-Seine 2026"
         className="z-0 object-cover object-[50%_15%]"
         priority
