@@ -45,6 +45,10 @@
     @apply px-(--section-x-mobile) py-(--section-y-mobile) md:px-(--section-x-desktop) md:py-(--section-y-desktop);
   }
 
+  section:nth-child(odd) {
+    @apply bg-[#ebe6df];
+  }
+
   /* Typography system */
 
   h1,
