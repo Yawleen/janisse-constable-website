@@ -6,6 +6,7 @@ import Gallery from '@/components/sections/Gallery';
 import Engagement from '@/components/sections/Engagement';
 import Footer from '@/components/sections/Footer';
 import StickyVoteBar from '@/components/StickyVoteBar';
+import Victory from '@/components/sections/Victory';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <About />
       <Values />
+      <Victory />
       {/* <Vote /> */}
       <Gallery />
       <Engagement />
