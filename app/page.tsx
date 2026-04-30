@@ -9,7 +9,7 @@ import StickyVoteBar from '@/components/StickyVoteBar';
 
 export default function Home() {
   return (
-    <main className="bg-background">
+    <main>
       <Hero />
       <About />
       <Values />
