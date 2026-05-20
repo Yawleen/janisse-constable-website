@@ -8,8 +8,12 @@ const Footer = () => {
         <h2 className="text-3xl md:text-4xl mb-3">
           Janisse <span className="italic">Constable</span>
         </h2>
-        <p className="text-primary-text/60 text-xs tracking-[0.3em] uppercase mb-12">
+        <p className="text-primary-text text-xs tracking-[0.4em] uppercase mb-2">
           Miss Hauts-de-Seine 2026
+        </p>
+        <p className="text-primary-text/60 text-xs tracking-[0.3em] uppercase mb-12">
+          Candidate n°3 <span className="hidden md:inline">—</span>{' '}
+          <span className="block md:inline">Miss Île-de-France</span>
         </p>
 
         <div className="flex items-center justify-center gap-8 mb-12">
@@ -21,7 +25,7 @@ const Footer = () => {
             <Mail size={20} strokeWidth={1.2} />
           </Link>
           <Link
-            href="https://www.instagram.com/janisse_ctbl/?hl=en"
+            href="https://www.instagram.com/janisseconstable_/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-link"
