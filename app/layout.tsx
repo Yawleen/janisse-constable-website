@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: 'Janisse Constable',
     images: [
       {
-        url: 'images/hero-bg.png',
+        url: 'images/og-image-v2.jpeg',
         width: 1200,
         height: 630,
         alt: 'Janisse Constable - Miss Hauts-de-Seine 2026',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title:
       'Janisse Constable - Miss Hauts-de-Seine 2026 et candidate n°3 à Miss Île-de-France 2026',
     description: 'Découvrez son parcours, ses valeurs et ses engagements.',
-    images: ['images/hero-bg.png'],
+    images: ['images/og-image-v2.jpeg'],
   },
 };
 
