@@ -1,10 +1,11 @@
 'use client';
 
-import { Fragment, useState } from 'react';
+import { Fragment, useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import TimelineSeparator from '../TimelineSeparator';
 
 const About = () => {
+  const timelineRef = useRef<HTMLParagraphElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const steps: {
@@ -34,15 +35,19 @@ const About = () => {
 
   const changeActiveIndex = (index: number) => setActiveIndex(index);
 
-  const goPrev = () =>
+  const goPrev = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === 0 ? steps.length - 1 : prevIndex - 1
     );
+    timelineRef.current?.scrollIntoView({ block: 'start' });
+  };
 
-  const goNext = () =>
+  const goNext = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === steps.length - 1 ? 0 : prevIndex + 1
     );
+    timelineRef.current?.scrollIntoView({ block: 'start' });
+  };
 
   return (
     <section className="text-center">
@@ -51,7 +56,10 @@ const About = () => {
         Un chemin, <span className="block italic">une histoire</span>
       </h2>
       <div className="max-w-3xl mx-auto">
-        <div className="flex items-center justify-center gap-1 mb-6 md:mb-8">
+        <div
+          ref={timelineRef}
+          className="flex items-center justify-center gap-1 mb-6 md:mb-8"
+        >
           {steps.map(({ year }, index) => (
             <Fragment key={year}>
               <button
