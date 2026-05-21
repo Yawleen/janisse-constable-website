@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="relative text-center md:text-left py-10 md:py-26 text-primary-text min-h-screen flex flex-col justify-end">
       <Image
-        src="/images/hero-bg.png"
+        src="/images/hero-bg.webp"
         fill
         sizes="100vw"
         alt="Janisse Constable, Miss Hauts-de-Seine 2026 pour Miss Île-de-France"
