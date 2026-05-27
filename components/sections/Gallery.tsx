@@ -1,148 +1,130 @@
 'use client';
 
-import * as React from 'react';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-  type CarouselApi,
-} from '@/components/ui/carousel';
+import { useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
-import Autoplay from 'embla-carousel-autoplay';
-import Link from 'next/link';
-import { Instagram } from 'lucide-react';
-
-const images: {
-  path: string;
-  photoCredit?: string;
-  instagramUrl?: string;
-  light?: boolean;
-}[] = [
-  {
-    path: '/images/image-gallery-1.png',
-    photoCredit: 'donhovann_visuals',
-    instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
-  },
-  {
-    path: '/images/image-gallery-13.png',
-    photoCredit: 'donhovann_visuals',
-    instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
-    light: true,
-  },
-  {
-    path: '/images/image-gallery-2.png',
-    photoCredit: 'donhovann_visuals',
-    instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
-  },
-  {
-    path: '/images/image-gallery-3.png',
-    photoCredit: 'Ledockernoir',
-    instagramUrl: 'https://www.instagram.com/ledockernoir/?hl=en',
-  },
-  {
-    path: '/images/image-gallery-12.png',
-    photoCredit: 'donhovann_visuals',
-    instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
-  },
-  {
-    path: '/images/image-gallery-4.png',
-    photoCredit: 'donhovann_visuals',
-    instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
-  },
-  {
-    path: '/images/image-gallery-5.png',
-    photoCredit: 'Ledockernoir',
-    instagramUrl: 'https://www.instagram.com/ledockernoir/?hl=en',
-  },
-  {
-    path: '/images/image-gallery-6.png',
-    photoCredit: 'deep_focuss_',
-    instagramUrl:
-      'https://www.instagram.com/deep_focuss_?igsh=MTlzaGFybmx3M201bg%3D%3D',
-    light: true,
-  },
-  {
-    path: '/images/image-gallery-7.png',
-    photoCredit: 'Ledockernoir',
-    instagramUrl: 'https://www.instagram.com/ledockernoir/?hl=en',
-  },
-  { path: '/images/image-gallery-8.png' },
-  { path: '/images/image-gallery-9.png' },
-  { path: '/images/image-gallery-10.png' },
-  { path: '/images/image-gallery-11.png' },
-];
+import { categories, Category, images } from '@/data/gallery-images';
+import GalleryCarousel from '../GalleryCarousel';
 
 const Gallery = () => {
-  const [api, setApi] = React.useState<CarouselApi>();
-  const [current, setCurrent] = React.useState(0);
-  const [count, setCount] = React.useState(0);
+  const [activeCategory, setActiveCategory] = useState<Category>(categories[0]);
+  const [isCarouselOpen, setIsCarouselOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [loadedImages, setLoadedImages] = useState<Record<string, boolean>>({});
+  const filteredImages = useMemo(() => {
+    return activeCategory === 'Tout'
+      ? images
+      : images.filter((image) => image.category === activeCategory);
+  }, [activeCategory]);
+  const numberOfImages = filteredImages.length;
 
-  React.useEffect(() => {
-    if (!api) {
-      return;
-    }
-    setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
-    api.on('select', () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
-  }, [api]);
+  const changeActiveCategory = (category: Category) => {
+    setActiveCategory(category);
+    setCurrentImageIndex(0);
+  };
+
+  const openCarousel = () => setIsCarouselOpen(true);
+
+  const selectImage = (index: number) => {
+    setCurrentImageIndex(index);
+    openCarousel();
+  };
+
+  useEffect(() => {
+    document.body.style.overflow = isCarouselOpen ? 'hidden' : 'auto';
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isCarouselOpen]);
 
   return (
     <section>
       <div className="max-w-7xl mx-auto">
-        <p className="subtitle">Portfolio</p>
+        <p className="subtitle">Mes univers</p>
         <h2>
           Galerie <span className="italic">éditoriale</span>
         </h2>
-      </div>
-      <Carousel
-        setApi={setApi}
-        plugins={[
-          Autoplay({
-            delay: 3000,
-          }),
-        ]}
-        className="w-full max-w-2xl mx-auto mt-10 md:mt-14"
-      >
-        <CarouselContent>
-          {images.map((photoInfo, index) => (
-            <CarouselItem key={index}>
-              <div className="relative max-h-162.5 mx-auto aspect-3/4">
+
+        <div className="flex flex-wrap mb-12 gap-y-2 lg:mb-16">
+          {categories.map((category) => {
+            const count =
+              category === 'Tout'
+                ? images.length
+                : images.filter((image) => image.category === category).length;
+
+            return (
+              <button
+                key={category}
+                onClick={() => changeActiveCategory(category)}
+                className={`relative border-b text-xs uppercase tracking-wider py-2 px-4 cursor-pointer transition-all duration-700 lg:py-3 lg:px-6 lg:text-sm ${
+                  activeCategory === category
+                    ? 'text-primary border-primary'
+                    : 'border-transparent opacity-60 hover:opacity-100'
+                }`}
+                aria-label={`Catégorie ${category}`}
+              >
+                {category}
+                <sup className="ml-1 text-[9px] tracking-normal">{count}</sup>
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="grid grid-cols-2 gap-3 mb-10 lg:grid-cols-4 lg:gap-5 lg:mb-14">
+          {filteredImages.slice(0, 4).map((image, index) => {
+            const animationClass = loadedImages[image.path]
+              ? `fade-in-${index + 1}`
+              : '';
+
+            return (
+              <button
+                key={`${activeCategory}-${image.path}`}
+                onClick={() => selectImage(index)}
+                className="group relative aspect-3/4 cursor-pointer overflow-hidden"
+                aria-label={`Agrandir l'image ${index + 1} de la catégorie ${image.category}`}
+              >
                 <Image
-                  src={photoInfo.path}
-                  alt={`Photo n°${index + 1} Janisse Constable`}
+                  src={image.path}
+                  onLoad={() => {
+                    if (!loadedImages[image.path]) {
+                      setLoadedImages((prev) => ({
+                        ...prev,
+                        [image.path]: true,
+                      }));
+                    }
+                  }}
+                  alt={`Photo n°${index + 1} de la catégorie ${image.category}`}
                   fill
-                  sizes="(max-width: 768px) 100vw, 40vw"
-                  className="object-cover"
-                  loading="lazy"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className={`group-hover:scale-105 transition-transform duration-700 object-cover opacity-0 ${animationClass}`}
                 />
-                {photoInfo?.instagramUrl && photoInfo?.photoCredit && (
-                  <Link
-                    href={photoInfo.instagramUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Instagram"
-                    className={`absolute right-2 bottom-2 ${photoInfo?.light ? 'text-secondary-text' : 'text-primary-text'} font-bold flex items-center gap-1`}
-                  >
-                    <Instagram size={15} strokeWidth={2.5} />
-                    <p className="text-[8px] md:text-base">
-                      {photoInfo.photoCredit}
-                    </p>
-                  </Link>
-                )}
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="-left-4 md:size-10 cursor-pointer" />
-        <CarouselNext className="-right-4 md:size-10 cursor-pointer" />
-      </Carousel>
-      <p className="mt-4 md:mt-8 font-bold text-center text-sm md:text-base">
-        {current} <span className="font-normal">sur</span> {count}
-      </p>
+              </button>
+            );
+          })}
+        </div>
+
+        {numberOfImages > 4 && (
+          <button
+            onClick={openCarousel}
+            className="btn btn-primary mx-auto gap-2"
+          >
+            Découvrir la galerie
+            <span className="text-[10px] lg:text-[11px]">
+              ({numberOfImages})
+            </span>
+          </button>
+        )}
+      </div>
+
+      {isCarouselOpen && (
+        <GalleryCarousel
+          setIsCarouselOpen={setIsCarouselOpen}
+          currentImage={filteredImages[currentImageIndex]}
+          currentImageIndex={currentImageIndex}
+          numberOfImages={numberOfImages}
+          setCurrentImageIndex={setCurrentImageIndex}
+        />
+      )}
     </section>
   );
 };

@@ -78,7 +78,7 @@
   /* Button system */
 
   .btn {
-    @apply block w-fit px-6 py-5 md:px-7 md:py-6 uppercase tracking-wider text-sm md:text-base transition-all duration-300 ease-in-out;
+    @apply flex items-center w-fit cursor-pointer px-4 py-3 md:px-6 md:py-4 uppercase tracking-wider text-sm md:text-base transition-all duration-300 ease-in-out;
   }
 
   .btn-primary {
@@ -130,6 +130,12 @@
   .region {
     @apply block text-xs leading-tight;
   }
+
+  /* Gallery */
+
+  .active-category {
+    @apply text-primary border-primary;
+  }
 }
 
 
@@ -147,6 +153,18 @@
   }
 }
 
-.fade-in {
+.fade-in-1 {
   animation: fade-in .7s forwards ease-in;
+}
+
+.fade-in-2 {
+  animation: fade-in .7s .3s forwards ease-in;
+}
+
+.fade-in-3 {
+  animation: fade-in .7s .6s forwards ease-in;
+}
+
+.fade-in-4 {
+  animation: fade-in .7s .9s forwards ease-in;
 }
