@@ -7,6 +7,7 @@ import Engagement from '@/components/sections/Engagement';
 import Footer from '@/components/sections/Footer';
 import StickyVoteBar from '@/components/StickyVoteBar';
 import Victory from '@/components/sections/Victory';
+import Partners from '@/components/sections/Partners';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       {/* <Vote /> */}
       <Gallery />
       {/* <Engagement /> */}
+      <Partners />
       <Footer />
       {/* <StickyVoteBar /> */}
     </main>
