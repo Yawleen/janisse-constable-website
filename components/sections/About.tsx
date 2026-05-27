@@ -100,7 +100,7 @@ const About = () => {
             aria-label="Étape précédente"
           >
             <ChevronLeft className="w-4 h-4 transition-transform duration-500 group-hover:-translate-x-1" />
-            <span className="text-xs tracking-[0.3em] uppercase md:text-sm">
+            <span className="text-xs font-bold tracking-[0.3em] uppercase md:text-sm">
               Précédent
             </span>
           </button>
@@ -110,7 +110,7 @@ const About = () => {
             className="group flex items-center gap-2 hover:text-primary transition-colors duration-500 cursor-pointer"
             aria-label="Étape suivante"
           >
-            <span className="text-xs tracking-[0.3em] uppercase md:text-sm">
+            <span className="text-xs font-bold tracking-[0.3em] uppercase md:text-sm">
               Suivant
             </span>
             <ChevronRight className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1" />
