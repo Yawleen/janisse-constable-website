@@ -168,3 +168,21 @@
 .fade-in-4 {
   animation: fade-in .7s .9s forwards ease-in;
 }
+
+@keyframes scroll-gallery {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-gallery {
+  animation: scroll-gallery 30s linear infinite;
+}
+
+.animate-scroll-gallery:hover {
+  animation-play-state: paused;
+}
