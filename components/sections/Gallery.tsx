@@ -119,9 +119,8 @@ const Gallery = () => {
       {isCarouselOpen && (
         <GalleryCarousel
           setIsCarouselOpen={setIsCarouselOpen}
-          currentImage={filteredImages[currentImageIndex]}
+          images={filteredImages}
           currentImageIndex={currentImageIndex}
-          numberOfImages={numberOfImages}
           setCurrentImageIndex={setCurrentImageIndex}
         />
       )}

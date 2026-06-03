@@ -17,8 +17,8 @@ const CarouselImage = ({
       onLoad={() => setLoadedImage(true)}
       alt={`Photo ${currentImageIndex + 1} de la catégorie ${image.category}`}
       fill
-      sizes="(max-width: 768px) 85vw, 40vw"
-      className={`object-contain transition-opacity duration-700 ${
+      sizes="(max-width: 768px) 95vw, 40vw"
+      className={`object-contain transition-opacity duration-500 ${
         loadedImage ? 'opacity-100' : 'opacity-0'
       }`}
     />
