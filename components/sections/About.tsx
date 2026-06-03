@@ -66,7 +66,7 @@ const About = () => {
                 onClick={() => changeActiveIndex(index)}
                 className={`font-serif text-lg tracking-wider relative px-2 md:px-4 py-3 cursor-pointer transition-all duration-700 md:text-xl ${
                   activeIndex === index
-                    ? 'text-primary scale-120'
+                    ? 'text-primary scale-130'
                     : 'opacity-60 hover:opacity-100'
                 }`}
                 aria-label={`Année ${year}`}
