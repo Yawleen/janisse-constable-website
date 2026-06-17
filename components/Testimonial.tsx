@@ -8,7 +8,7 @@ type valuesProps = {
   relation: string;
 };
 
-const Value = ({
+const Testimonial = ({
   image,
   quality,
   testimonial,
@@ -32,7 +32,7 @@ const Value = ({
       <blockquote className="text-sm md:text-base leading-relaxed max-w-sm mb-6">
         « {testimonial} »
       </blockquote>
-      <div className="mt-auto">
+      <div>
         <p className="text-sm font-bold">{author}</p>
         <p className="text-xs">{relation}</p>
       </div>
@@ -40,4 +40,4 @@ const Value = ({
   );
 };
 
-export default Value;
+export default Testimonial;
