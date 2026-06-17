@@ -1,6 +1,6 @@
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
-import Values from '@/components/sections/Values';
+import Testimonials from '@/components/sections/Testimonials';
 import Vote from '@/components/sections/Vote';
 import Gallery from '@/components/sections/Gallery';
 import Engagement from '@/components/sections/Engagement';
@@ -14,7 +14,7 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <Values />
+      <Testimonials />
       <Victory />
       {/* <Vote /> */}
       <Gallery />
