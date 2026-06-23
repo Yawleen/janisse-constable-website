@@ -8,12 +8,12 @@ const testimonials: {
   relation: string;
 }[] = [
   {
-    image: '/images/collegues.png',
-    quality: 'Positive',
+    image: '/images/yanna.png',
+    quality: 'Fédératrice',
     quote:
-      'Rayonnante et pleine de charme, elle incarne au bureau une douceur élégante. Toujours avec une pointe d’humour, elle illumine nos journées avec ses blagues pas toujours réussies… mais c’est justement ce qui les rend drôles au final.',
-    author: 'Laetitia, Nathan & Audrey',
-    relation: 'Collègues de travail',
+      'Janisse est une jeune femme engagée, bienveillante et fédératrice. Toujours disponible et à l’écoute, elle aime rassembler les personnes autour d’elle et instaurer un climat positif. Véritable ambassadrice de bonne humeur, elle sait créer du lien, apaiser les tensions et encourager une atmosphère sereine et harmonieuse. Je suis fière de son parcours et de ses valeurs.',
+    author: 'Yanna',
+    relation: 'Tante',
   },
   {
     image: '/images/celia.png',
