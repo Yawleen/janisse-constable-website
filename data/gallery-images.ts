@@ -23,6 +23,32 @@ export type galleryImage = {
 
 export const images: galleryImage[] = [
   {
+    path: '/images/image-gallery-32.webp',
+    category: 'Éditorial',
+  },
+  {
+    path: '/images/image-gallery-29.webp',
+    category: 'Éditorial',
+    photoCredit: 'donhovann_visuals',
+    instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
+  },
+  {
+    path: '/images/image-gallery-31.webp',
+    category: 'Authentique',
+    photoCredit: 'bdm_photographe',
+    instagramUrl: 'https://www.instagram.com/bdm_photographe/?hl=en',
+  },
+  {
+    path: '/images/image-gallery-30.webp',
+    category: 'Univers Miss',
+  },
+  {
+    path: '/images/image-gallery-33.webp',
+    category: 'Univers Miss',
+    photoCredit: 'donhovann_visuals',
+    instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
+  },
+  {
     path: '/images/image-gallery-25.webp',
     category: 'Éditorial',
     photoCredit: 'donhovann_visuals',
@@ -33,7 +59,7 @@ export const images: galleryImage[] = [
   { path: '/images/image-gallery-22.webp', category: 'Authentique' },
   {
     path: '/images/image-gallery-21.webp',
-    category: 'Univers Miss',
+    category: 'Éditorial',
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
   },
@@ -103,6 +129,12 @@ export const images: galleryImage[] = [
     instagramUrl: 'https://www.instagram.com/ledockernoir/?hl=en',
   },
   {
+    path: '/images/image-gallery-1.webp',
+    category: 'Éditorial',
+    photoCredit: 'donhovann_visuals',
+    instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
+  },
+  {
     path: '/images/image-gallery-27.webp',
     category: 'Éditorial',
     photoCredit: 'donhovann_visuals',
@@ -110,7 +142,7 @@ export const images: galleryImage[] = [
   },
   {
     path: '/images/image-gallery-4.webp',
-    category: 'Univers Miss',
+    category: 'Éditorial',
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
   },
@@ -128,13 +160,7 @@ export const images: galleryImage[] = [
   },
   {
     path: '/images/image-gallery-2.webp',
-    category: 'Univers Miss',
-    photoCredit: 'donhovann_visuals',
-    instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
-  },
-  {
-    path: '/images/image-gallery-1.webp',
-    category: 'Univers Miss',
+    category: 'Éditorial',
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
   },
