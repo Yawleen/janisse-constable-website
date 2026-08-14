@@ -57,7 +57,7 @@
   }
 
   h1 {
-    @apply text-5xl md:text-7xl tracking-tight mb-6;
+    @apply text-5xl md:text-6xl tracking-tight mb-6;
   }
 
   h2 {
@@ -107,7 +107,7 @@
   /* Image system */
 
   .image-overlay-dark {
-    @apply absolute size-full inset-0 bg-linear-to-t from-black/50 to-transparent z-1;
+    @apply absolute size-full inset-0 bg-linear-to-t from-black/50 to-transparent z-1 md:from-black/18;
   }
 
   /* Subtitle */
