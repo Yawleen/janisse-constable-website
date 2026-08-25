@@ -20,7 +20,6 @@ export type galleryImage = {
   category: Exclude<Category, 'Tout'>;
   photoCredit?: string;
   instagramUrl?: string;
-  light?: boolean;
 };
 
 export const images: galleryImage[] = [
@@ -132,7 +131,6 @@ export const images: galleryImage[] = [
     category: 'Univers Miss',
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
-    light: true,
   },
   {
     path: '/images/image-gallery-12.webp',
@@ -142,7 +140,6 @@ export const images: galleryImage[] = [
   },
   { path: '/images/image-gallery-11.webp', category: 'Authentique' },
   { path: '/images/image-gallery-10.webp', category: 'Authentique' },
-  { path: '/images/image-gallery-9.webp', category: 'Authentique' },
   { path: '/images/image-gallery-8.webp', category: 'Authentique' },
   {
     path: '/images/image-gallery-7.webp',
@@ -155,14 +152,6 @@ export const images: galleryImage[] = [
     category: 'Éditorial',
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
-  },
-  {
-    path: '/images/image-gallery-6.webp',
-    category: 'Portraits',
-    photoCredit: 'deep_focuss_',
-    instagramUrl:
-      'https://www.instagram.com/deep_focuss_?igsh=MTlzaGFybmx3M201bg%3D%3D',
-    light: true,
   },
   {
     path: '/images/image-gallery-5.webp',
