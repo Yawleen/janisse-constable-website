@@ -3,14 +3,16 @@ export type Category =
   | 'Authentique'
   | 'Portraits'
   | 'Univers Miss'
-  | 'Éditorial';
+  | 'Éditorial'
+  | 'Road to Miss Île-de-France';
 
 export const categories: Category[] = [
   'Tout',
-  'Authentique',
-  'Portraits',
+  'Road to Miss Île-de-France',
   'Univers Miss',
   'Éditorial',
+  'Portraits',
+  'Authentique',
 ];
 
 export type galleryImage = {
@@ -22,6 +24,10 @@ export type galleryImage = {
 };
 
 export const images: galleryImage[] = [
+  {
+    path: '/images/image-gallery-36.webp',
+    category: 'Road to Miss Île-de-France',
+  },
   {
     path: '/images/image-gallery-32.webp',
     category: 'Éditorial',
@@ -39,8 +45,16 @@ export const images: galleryImage[] = [
     instagramUrl: 'https://www.instagram.com/bdm_photographe/?hl=en',
   },
   {
+    path: '/images/image-gallery-34.webp',
+    category: 'Road to Miss Île-de-France',
+  },
+  {
     path: '/images/image-gallery-30.webp',
     category: 'Univers Miss',
+  },
+  {
+    path: '/images/image-gallery-35.webp',
+    category: 'Road to Miss Île-de-France',
   },
   {
     path: '/images/image-gallery-33.webp',
@@ -49,10 +63,20 @@ export const images: galleryImage[] = [
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
   },
   {
+    path: '/images/image-gallery-37.webp',
+    category: 'Road to Miss Île-de-France',
+  },
+  {
     path: '/images/image-gallery-25.webp',
     category: 'Éditorial',
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
+  },
+  {
+    path: '/images/image-gallery-38.webp',
+    category: 'Road to Miss Île-de-France',
+    photoCredit: 'chloehautier',
+    instagramUrl: 'https://www.instagram.com/chloehautier/?hl=en',
   },
   { path: '/images/image-gallery-24.webp', category: 'Univers Miss' },
   { path: '/images/image-gallery-23.webp', category: 'Authentique' },
