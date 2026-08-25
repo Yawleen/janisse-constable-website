@@ -29,8 +29,10 @@ export const images: galleryImage[] = [
     category: 'Road to Miss Île-de-France',
   },
   {
-    path: '/images/image-gallery-32.webp',
-    category: 'Éditorial',
+    path: '/images/image-gallery-40.webp',
+    category: 'Portraits',
+    photoCredit: 'estelleoff',
+    instagramUrl: 'https://www.instagram.com/estelleoff/?hl=en',
   },
   {
     path: '/images/image-gallery-29.webp',
@@ -49,8 +51,18 @@ export const images: galleryImage[] = [
     category: 'Road to Miss Île-de-France',
   },
   {
+    path: '/images/image-gallery-32.webp',
+    category: 'Éditorial',
+  },
+  {
     path: '/images/image-gallery-30.webp',
     category: 'Univers Miss',
+  },
+  {
+    path: '/images/image-gallery-39.webp',
+    category: 'Portraits',
+    photoCredit: 'estelleoff',
+    instagramUrl: 'https://www.instagram.com/estelleoff/?hl=en',
   },
   {
     path: '/images/image-gallery-35.webp',
@@ -71,6 +83,12 @@ export const images: galleryImage[] = [
     category: 'Éditorial',
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
+  },
+  {
+    path: '/images/image-gallery-41.webp',
+    category: 'Portraits',
+    photoCredit: 'estelleoff',
+    instagramUrl: 'https://www.instagram.com/estelleoff/?hl=en',
   },
   {
     path: '/images/image-gallery-38.webp',
