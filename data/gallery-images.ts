@@ -20,7 +20,6 @@ export type galleryImage = {
   category: Exclude<Category, 'Tout'>;
   photoCredit?: string;
   instagramUrl?: string;
-  light?: boolean;
 };
 
 export const images: galleryImage[] = [
@@ -41,10 +40,10 @@ export const images: galleryImage[] = [
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
   },
   {
-    path: '/images/image-gallery-31.webp',
+    path: '/images/image-gallery-9.webp',
     category: 'Authentique',
-    photoCredit: 'bdm_photographe',
-    instagramUrl: 'https://www.instagram.com/bdm_photographe/?hl=en',
+    photoCredit: 'estelleoff',
+    instagramUrl: 'https://www.instagram.com/estelleoff/?hl=en',
   },
   {
     path: '/images/image-gallery-34.webp',
@@ -53,6 +52,12 @@ export const images: galleryImage[] = [
   {
     path: '/images/image-gallery-32.webp',
     category: 'Éditorial',
+  },
+  {
+    path: '/images/image-gallery-31.webp',
+    category: 'Authentique',
+    photoCredit: 'bdm_photographe',
+    instagramUrl: 'https://www.instagram.com/bdm_photographe/?hl=en',
   },
   {
     path: '/images/image-gallery-30.webp',
@@ -96,15 +101,25 @@ export const images: galleryImage[] = [
     photoCredit: 'chloehautier',
     instagramUrl: 'https://www.instagram.com/chloehautier/?hl=en',
   },
+  {
+    path: '/images/image-gallery-42.webp',
+    category: 'Portraits',
+    photoCredit: 'estelleoff',
+    instagramUrl: 'https://www.instagram.com/estelleoff/?hl=en',
+  },
+  {
+    path: '/images/image-gallery-43.webp',
+    category: 'Road to Miss Île-de-France',
+  },
   { path: '/images/image-gallery-24.webp', category: 'Univers Miss' },
   { path: '/images/image-gallery-23.webp', category: 'Authentique' },
-  { path: '/images/image-gallery-22.webp', category: 'Authentique' },
   {
     path: '/images/image-gallery-21.webp',
     category: 'Éditorial',
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
   },
+  { path: '/images/image-gallery-22.webp', category: 'Authentique' },
   {
     path: '/images/image-gallery-20.webp',
     category: 'Univers Miss',
@@ -112,8 +127,8 @@ export const images: galleryImage[] = [
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
   },
   { path: '/images/image-gallery-19.webp', category: 'Authentique' },
-  { path: '/images/image-gallery-18.webp', category: 'Authentique' },
   { path: '/images/image-gallery-17.webp', category: 'Univers Miss' },
+  { path: '/images/image-gallery-18.webp', category: 'Authentique' },
   { path: '/images/image-gallery-16.webp', category: 'Univers Miss' },
   {
     path: '/images/image-gallery-15.webp',
@@ -121,6 +136,7 @@ export const images: galleryImage[] = [
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
   },
+  { path: '/images/image-gallery-6.webp', category: 'Authentique' },
   {
     path: '/images/image-gallery-14.webp',
     category: 'Univers Miss',
@@ -132,7 +148,6 @@ export const images: galleryImage[] = [
     category: 'Univers Miss',
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
-    light: true,
   },
   {
     path: '/images/image-gallery-12.webp',
@@ -142,7 +157,6 @@ export const images: galleryImage[] = [
   },
   { path: '/images/image-gallery-11.webp', category: 'Authentique' },
   { path: '/images/image-gallery-10.webp', category: 'Authentique' },
-  { path: '/images/image-gallery-9.webp', category: 'Authentique' },
   { path: '/images/image-gallery-8.webp', category: 'Authentique' },
   {
     path: '/images/image-gallery-7.webp',
@@ -155,14 +169,6 @@ export const images: galleryImage[] = [
     category: 'Éditorial',
     photoCredit: 'donhovann_visuals',
     instagramUrl: 'https://www.instagram.com/donhovann_visuals/?hl=en',
-  },
-  {
-    path: '/images/image-gallery-6.webp',
-    category: 'Portraits',
-    photoCredit: 'deep_focuss_',
-    instagramUrl:
-      'https://www.instagram.com/deep_focuss_?igsh=MTlzaGFybmx3M201bg%3D%3D',
-    light: true,
   },
   {
     path: '/images/image-gallery-5.webp',
