@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
 const partners: { name: string; instagram: string; logo?: string }[] = [
@@ -41,7 +40,7 @@ const Partners = () => {
             key={`${partner.name}-${index}`}
             className="shrink-0 flex items-center mx-8 md:mx-14"
           >
-            <Link
+            <a
               href={partner.instagram}
               target="_blank"
               rel="noopener noreferrer"
@@ -54,6 +53,7 @@ const Partners = () => {
                     src={partner.logo}
                     alt={`Logo de ${partner.name}`}
                     fill
+                    sizes={'(max-width: 768px) 60px, (max-width: 1200px) 80px'}
                     className="object-contain"
                   />
                 </div>
@@ -61,7 +61,7 @@ const Partners = () => {
               <span className="font-serif text-2xl md:text-3xl italic tracking-wide whitespace-nowrap opacity-80 hover:text-primary hover:opacity-100 transition-all duration-500">
                 {partner.name}
               </span>
-            </Link>
+            </a>
           </div>
         ))}
       </div>
