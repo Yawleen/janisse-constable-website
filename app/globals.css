@@ -91,10 +91,6 @@
     @apply opacity-[.9];
   }
 
-  .btn-primary span {
-    @apply text-base font-bold;
-  }
-
   .btn-outline {
     @apply border border-primary;
   }
