@@ -2,6 +2,7 @@ import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Testimonials from '@/components/sections/Testimonials';
 import Vote from '@/components/sections/Vote';
+import Event from '@/components/sections/Event';
 import Gallery from '@/components/sections/Gallery';
 import Engagement from '@/components/sections/Engagement';
 import Footer from '@/components/sections/Footer';
@@ -17,6 +18,7 @@ export default function Home() {
       <Testimonials />
       <Victory />
       <Vote />
+      <Event />
       <Gallery />
       {/* <Engagement /> */}
       <Partners />
