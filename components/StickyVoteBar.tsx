@@ -22,7 +22,7 @@ const StickyVoteBar = () => {
     >
       <div className="max-w-7xl mx-auto flex justify-center">
         <p className="text-sm md:text-base text-center">
-          Soutenez Janisse Constable — Candidate n°1 Miss Hauts-de-Seine 2026
+          Soutenez Janisse Constable — Candidate n°3 à Miss Île-de-France 2026
         </p>
       </div>
     </div>

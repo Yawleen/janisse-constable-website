@@ -4,7 +4,6 @@ import Testimonials from '@/components/sections/Testimonials';
 import Vote from '@/components/sections/Vote';
 import Event from '@/components/sections/Event';
 import Gallery from '@/components/sections/Gallery';
-import Engagement from '@/components/sections/Engagement';
 import Footer from '@/components/sections/Footer';
 import StickyVoteBar from '@/components/StickyVoteBar';
 import Victory from '@/components/sections/Victory';
@@ -16,14 +15,13 @@ export default function Home() {
       <Hero />
       <About />
       <Testimonials />
-      <Victory />
       <Vote />
       <Event />
+      <Victory />
       <Gallery />
-      {/* <Engagement /> */}
       <Partners />
       <Footer />
-      {/* <StickyVoteBar /> */}
+      <StickyVoteBar />
     </main>
   );
 }
