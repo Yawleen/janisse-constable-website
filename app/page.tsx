@@ -16,7 +16,7 @@ export default function Home() {
       <About />
       <Testimonials />
       <Victory />
-      {/* <Vote /> */}
+      <Vote />
       <Gallery />
       {/* <Engagement /> */}
       <Partners />
