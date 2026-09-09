@@ -18,7 +18,9 @@ const voteInfo: {
     title: 'Votez par SMS',
     description: (
       <>
-        <p className="md:hidden">
+        Très prochainement, vous pourrez voter pour moi par SMS. <br /> Restez à
+        l’affût ! <br />
+        {/* <p className="md:hidden">
           <strong>Sélectionnez votre région ci-dessous</strong> et{' '}
           <strong>cliquez sur le bouton &quot;Voter&quot;</strong> pour me
           soutenir.
@@ -51,18 +53,18 @@ const voteInfo: {
               </span>
             </span>
           </span>
-        </p>
+        </p> */}
       </>
     ),
-    info: `1 SMS = 1 vote ; jusqu'à 50 votes / jour ; ${SMS_VOTE.price} + coût d’un SMS selon votre opérateur`,
+    // info: `1 SMS = 1 vote ; jusqu'à 50 votes / jour ; ${SMS_VOTE.price} + coût d’un SMS selon votre opérateur`,
   },
   {
     icon: CalendarIcon,
     title: 'Date limite',
     description: (
       <>
-        Les votes sont ouverts jusqu&apos;au{' '}
-        <strong>samedi 18 avril, 20h</strong>.
+        Les votes seront ouverts du <strong>dimanche 13 septembre à 12h</strong>{' '}
+        jusqu&apos;au <strong> dimanche 20 septembre à 12h</strong>.
       </>
     ),
   },
@@ -70,7 +72,7 @@ const voteInfo: {
 
 const Vote = () => {
   return (
-    <section className="relative text-center">
+    <section id="vote" className="relative text-center">
       <p className="subtitle">Soutien</p>
       <h2>Comment voter ?</h2>
       <p className="mb-12 md:mb-20">
@@ -92,7 +94,7 @@ const Vote = () => {
           );
         })}
       </div>
-      <VoteByRegion />
+      {/* <VoteByRegion /> */}
     </section>
   );
 };
