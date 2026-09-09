@@ -68,7 +68,7 @@ export default function RootLayout({
       >
         {children}
         <Analytics />
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID_TEST!} />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID_TEST!} /> {/* remplacer l'ID par celui de la production */}
       </body>
     </html>
   );

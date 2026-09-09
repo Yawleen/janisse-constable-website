@@ -1,3 +1,5 @@
+'use client';
+
 import { ElementType } from 'react';
 import {
   CalendarIcon,
@@ -6,6 +8,7 @@ import {
 import VoteInfo from '../VoteInfo';
 import { SMS_VOTE_IDF } from '@/constants/vote';
 import LinkButton from '../LinkButton';
+import { sendGAEvent } from '@next/third-parties/google';
 
 export const smsLink = `sms:${SMS_VOTE_IDF.number}?body=${encodeURIComponent(SMS_VOTE_IDF.keyword)}`;
 
@@ -54,6 +57,12 @@ const voteInfo: {
 ];
 
 const Vote = () => {
+  const handleVoteClick = () => {
+    sendGAEvent('event', 'vote_click', {
+      button_location: 'vote_section',
+    });
+  };
+
   return (
     <section className="relative text-center">
       <p className="subtitle">Soutien</p>
@@ -81,7 +90,7 @@ const Vote = () => {
         id="vote"
         className="flex justify-center md:invisible md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
       >
-        <LinkButton isExternal href={smsLink}>
+        <LinkButton onClick={handleVoteClick} isExternal href={smsLink}>
           <span className="text-base font-bold">Voter</span>
         </LinkButton>
       </div>

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import LinkButton from './LinkButton';
 import { smsLink } from './sections/Vote';
+import { sendGAEvent } from '@next/third-parties/google';
 
 const StickyVoteBar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,6 +17,12 @@ const StickyVoteBar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleVoteClick = () => {
+    sendGAEvent('event', 'vote_click', {
+      button_location: 'sticky_vote_bar',
+    });
+  };
+
   return (
     <div
       className={`fixed bottom-0 left-0 right-0 bg-[#1a1a1a] text-primary-text px-4 py-3 md:px-6 z-50 transition-transform duration-300 ${
@@ -27,7 +34,7 @@ const StickyVoteBar = () => {
           Soutenez Janisse Constable — Candidate n°3 à Miss Île-de-France 2026
         </p>
         <div className="md:hidden">
-          <LinkButton isExternal href={smsLink}>
+          <LinkButton onClick={handleVoteClick} isExternal href={smsLink}>
             <span className="text-base font-bold">Voter</span>
           </LinkButton>
         </div>
