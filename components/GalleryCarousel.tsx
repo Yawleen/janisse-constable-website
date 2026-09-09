@@ -10,7 +10,6 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from '@/components/ui/carousel';
-import Link from 'next/link';
 
 type galleryCarouselProps = {
   setIsCarouselOpen: Dispatch<SetStateAction<boolean>>;
@@ -80,7 +79,7 @@ const GalleryCarousel = ({
               images[currentImageIndex]?.instagramUrl && (
                 <small className="flex justify-center items-center gap-1 text-xs text-primary-text">
                   Crédit photo —
-                  <Link
+                  <a
                     href={images[currentImageIndex]?.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -89,7 +88,7 @@ const GalleryCarousel = ({
                   >
                     <Instagram size={15} strokeWidth={2.5} />
                     {images[currentImageIndex]?.photoCredit}
-                  </Link>
+                  </a>
                 </small>
               )}
           </div>

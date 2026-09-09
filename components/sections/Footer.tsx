@@ -1,5 +1,4 @@
 import { Instagram, Mail, Facebook, Linkedin } from 'lucide-react';
-import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -17,14 +16,14 @@ const Footer = () => {
         </p>
 
         <div className="flex items-center justify-center gap-8 mb-12">
-          <Link
+          <a
             href="mailto:janisseconstable97@gmail.com"
             className="contact-link"
             aria-label="Contact"
           >
             <Mail size={20} strokeWidth={1.2} />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://www.instagram.com/janisseconstable_/"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,8 +31,8 @@ const Footer = () => {
             aria-label="Instagram"
           >
             <Instagram size={20} strokeWidth={1.2} />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://www.facebook.com/janisse.constable"
             target="_blank"
             rel="noopener noreferrer"
@@ -41,8 +40,8 @@ const Footer = () => {
             aria-label="Facebook"
           >
             <Facebook size={20} strokeWidth={1.2} />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://fr.linkedin.com/in/janisse-constable"
             target="_blank"
             rel="noopener noreferrer"
@@ -50,7 +49,7 @@ const Footer = () => {
             aria-label="LinkedIn"
           >
             <Linkedin size={20} strokeWidth={1.2} />
-          </Link>
+          </a>
         </div>
 
         <div className="w-12 h-px bg-white/60 mx-auto mb-8" />
@@ -60,13 +59,13 @@ const Footer = () => {
           <br />
           <span className="italic">
             Site réalisé par{' '}
-            <Link
+            <a
               href="https://fr.linkedin.com/in/constable-yolene"
               target="_blank"
               rel="noopener noreferrer"
             >
               Yolène Constable
-            </Link>
+            </a>
             .
           </span>
         </p>
