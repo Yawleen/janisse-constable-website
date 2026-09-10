@@ -9,6 +9,7 @@ import VoteInfo from '../VoteInfo';
 import { SMS_VOTE_IDF } from '@/constants/vote';
 import LinkButton from '../LinkButton';
 import { sendGAEvent } from '@next/third-parties/google';
+import { useCookieConsent } from '@/lib/useCookieConsent';
 
 export const smsLink = `sms:${SMS_VOTE_IDF.number}?body=${encodeURIComponent(SMS_VOTE_IDF.keyword)}`;
 
@@ -57,7 +58,10 @@ const voteInfo: {
 ];
 
 const Vote = () => {
+  const { consent } = useCookieConsent();
+
   const handleVoteClick = () => {
+    if (consent !== 'accepted') return;
     sendGAEvent('event', 'vote_click', {
       button_location: 'vote_section',
     });

@@ -4,9 +4,12 @@ import { useState, useEffect } from 'react';
 import LinkButton from './LinkButton';
 import { smsLink } from './sections/Vote';
 import { sendGAEvent } from '@next/third-parties/google';
+import CookieBanner from './CookieBanner';
+import { useCookieConsent } from '@/lib/useCookieConsent';
 
 const StickyVoteBar = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { consent } = useCookieConsent();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +21,7 @@ const StickyVoteBar = () => {
   }, []);
 
   const handleVoteClick = () => {
+    if (consent !== 'accepted') return;
     sendGAEvent('event', 'vote_click', {
       button_location: 'sticky_vote_bar',
     });
@@ -44,6 +48,7 @@ const StickyVoteBar = () => {
           </LinkButton>
         </div>
       </div>
+      <CookieBanner />
     </div>
   );
 };
