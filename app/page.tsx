@@ -8,12 +8,14 @@ import Footer from '@/components/sections/Footer';
 import StickyVoteBar from '@/components/StickyVoteBar';
 import Victory from '@/components/sections/Victory';
 import Partners from '@/components/sections/Partners';
+import Actions from '@/components/sections/Actions';
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <About />
+      <Actions />
       <Testimonials />
       <Vote />
       <Event />
