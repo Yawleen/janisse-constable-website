@@ -9,8 +9,6 @@ export function GAWrapper() {
   if (!isLoaded || consent !== 'accepted') {
     return null;
   }
-  return <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID_TEST!} />;
-  {
-    /* remplacer l'ID par celui de la production */
-  }
+  
+  return <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />;
 }
