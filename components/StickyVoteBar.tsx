@@ -42,11 +42,6 @@ const StickyVoteBar = () => {
             <span className="text-base font-bold">Voter</span>
           </LinkButton>
         </div>
-        <div className="hidden md:block">
-          <LinkButton href="#vote">
-            <span className="text-base font-bold">Voter</span>
-          </LinkButton>
-        </div>
       </div>
       <CookieBanner />
     </div>
