@@ -9,11 +9,11 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import LinkButton from './LinkButton';
-import { SMS_VOTE } from '@/constants/vote';
+import { SMS_VOTE_HDS } from '@/constants/vote';
 import { useState } from 'react';
 
 const items: { label: string; value: string }[] = Object.entries(
-  SMS_VOTE.regions
+  SMS_VOTE_HDS.regions
 ).map(([region, info]) => ({
   label: info.label,
   value: region,
@@ -52,14 +52,15 @@ const VoteByRegion = () => {
         sur le bouton ci-dessous, vous allez voter depuis la région{' '}
         <strong>
           {
-            SMS_VOTE.regions[selectedRegion as keyof typeof SMS_VOTE.regions]
-              .label
+            SMS_VOTE_HDS.regions[
+              selectedRegion as keyof typeof SMS_VOTE_HDS.regions
+            ].label
           }
           .
         </strong>
       </p>
       <LinkButton
-        href={`sms:${SMS_VOTE.regions[selectedRegion as keyof typeof SMS_VOTE.regions].number}?body=${encodeURIComponent(SMS_VOTE.keyword)}`}
+        href={`sms:${SMS_VOTE_HDS.regions[selectedRegion as keyof typeof SMS_VOTE_HDS.regions].number}?body=${encodeURIComponent(SMS_VOTE_HDS.keyword)}`}
       >
         Voter
       </LinkButton>

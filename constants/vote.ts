@@ -1,4 +1,4 @@
-export const SMS_VOTE = {
+export const SMS_VOTE_HDS = {
   keyword: 'HDS1',
   regions: {
     france: {
@@ -14,5 +14,11 @@ export const SMS_VOTE = {
       number: '71515',
     },
   },
+  price: '0,99€',
+} as const;
+
+export const SMS_VOTE_IDF = {
+  keyword: 'IDF3',
+  number: '71515',
   price: '0,99€',
 } as const;
