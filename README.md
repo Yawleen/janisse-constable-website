@@ -3,48 +3,41 @@
 ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css&logoColor=white)
-![Status](https://img.shields.io/badge/Status-V2%20in%20progress-yellow)
 
 ---
 
 ## ✨ Description
 
-Site vitrine développé pour accompagner la candidature de **Janisse Constable** à l’élection **Miss Hauts-de-Seine 2026**.
+Site vitrine officiel de **Janisse Constable, Miss Hauts-de-Seine 2026**.
 
-Suite à sa victoire, le projet évolue vers une **V2** afin d’accompagner sa participation à **Miss Île-de-France**.
+Le site présente son parcours, ses engagements ainsi que les différentes étapes de son aventure en tant que Miss Hauts-de-Seine.
 
-L’objectif est de créer une expérience digitale immersive, mettant en valeur son parcours, ses valeurs et son engagement.
-
----
-
-## 🚧 Évolution du projet
-
-- **V1** — Site de candidature Miss Hauts-de-Seine  
-- **V1.5** — Mise à jour post-victoire 👑  
-- **V2 (en cours)** — Refonte pour Miss Île-de-France  
+Pensé comme un espace évolutif, il permet de mettre en valeur son univers, ses actions et les moments forts de son année de règne à travers une expérience digitale immersive et élégante.
 
 ---
 
 ## 🎯 Objectifs
 
-- Construire une identité digitale forte
-- Mettre en avant son parcours et ses valeurs  
-- Créer une expérience utilisateur immersive et émotionnelle  
-- Soutenir une stratégie de communication digitale  
-- Accompagner l’évolution vers Miss Île-de-France
-- Faciliter la mobilisation autour de la candidature  
+- Présenter l'univers et le parcours de Janisse Constable
+- Mettre en avant ses engagements et les actions qu'elle mène
+- Retracer les moments forts de son aventure en tant que Miss Hauts-de-Seine
+- Valoriser son actualité et ses différentes expériences
+- Proposer une galerie permettant de découvrir son univers
+- Offrir une expérience utilisateur immersive et accessible
 
 ---
 
 ## ✨ Fonctionnalités
 
-- Section de présentation (hero section)
-- Storytelling du parcours (timeline interactive)
-- Témoignages et dimension humaine
-- Section engagement / actions
-- Section dédiée à l’expérience du concours
-- Galerie intelligente
-- Optimisation UX/UI 
+- Section de présentation (Hero)
+- Storytelling du parcours avec timeline interactive
+- Section dédiée aux engagements et actions
+- Témoignages
+- Galerie photo
+- Section dédiée aux expériences et événements
+- Présentation des partenaires
+- Optimisation UX/UI
+- Responsive design
 
 ---
 
@@ -57,14 +50,8 @@ L’objectif est de créer une expérience digitale immersive, mettant en valeur
 ---
 
 ## 🌐 Site en ligne
+
 https://janisseconstable.fr/
-
----
-
-## 🔄 Roadmap
-- V1 — Site candidature
-- V1.5 — Mise à jour post-victoire
-- V2 — Refonte Miss Île-de-France, ajout fonctionnalités interactives, amélioration animations & performance
 
 ---
 
