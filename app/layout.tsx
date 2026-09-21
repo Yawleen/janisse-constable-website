@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
-import { GAWrapper } from '@/components/GAWrapper';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
@@ -29,11 +28,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: 'Janisse Constable - Miss Hauts-de-Seine 2026',
   description:
-    'Miss Hauts-de-Seine 2026 et candidate n°3 à Miss Île-de-France 2026. Découvrez l’univers de Janisse Constable, son parcours, ses valeurs et ses engagements.',
+    'Découvrez l’univers de Janisse Constable, Miss Hauts-de-Seine 2026, son parcours, ses engagements et les moments forts de son aventure.',
   openGraph: {
-    title:
-      'Janisse Constable - Miss Hauts-de-Seine 2026 et candidate n°3 à Miss Île-de-France 2026',
-    description: 'Découvrez son parcours, ses valeurs et ses engagements.',
+    title: 'Janisse Constable - Miss Hauts-de-Seine 2026',
+    description:
+      'Découvrez l’univers de Janisse Constable, son parcours, ses engagements et les moments forts de son aventure.',
     url: SITE_URL,
     siteName: 'Janisse Constable',
     images: [
@@ -49,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title:
-      'Janisse Constable - Miss Hauts-de-Seine 2026 et candidate n°3 à Miss Île-de-France 2026',
-    description: 'Découvrez son parcours, ses valeurs et ses engagements.',
+    title: 'Janisse Constable - Miss Hauts-de-Seine 2026',
+    description:
+      'Découvrez l’univers de Janisse Constable, son parcours, ses engagements et les moments forts de son aventure.',
     images: ['images/og-image-v2.png'],
   },
 };
@@ -68,7 +67,6 @@ export default function RootLayout({
       >
         {children}
         <Analytics />
-        <GAWrapper />
       </body>
     </html>
   );
