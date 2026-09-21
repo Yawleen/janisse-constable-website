@@ -10,11 +10,6 @@ const Footer = () => {
         <p className="text-primary-text text-xs tracking-[0.4em] uppercase mb-2">
           Miss Hauts-de-Seine 2026
         </p>
-        <p className="text-primary-text/60 text-xs tracking-[0.3em] uppercase mb-12">
-          Candidate n°3 <span className="hidden md:inline">—</span>{' '}
-          <span className="block md:inline">Miss Île-de-France</span>
-        </p>
-
         <div className="flex items-center justify-center gap-8 mb-12">
           <a
             href="mailto:janisseconstable97@gmail.com"

@@ -35,7 +35,7 @@ const StickyVoteBar = () => {
     >
       <div className="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-5">
         <p className="text-sm md:text-base text-center">
-          Soutenez Janisse Constable — Candidate n°3 à Miss Île-de-France 2026
+          Soutenez Janisse Constable
         </p>
         <div className="md:hidden">
           <LinkButton onClick={handleVoteClick} isExternal href={smsLink}>
