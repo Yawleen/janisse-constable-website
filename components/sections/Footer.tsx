@@ -7,7 +7,7 @@ const Footer = () => {
         <h2 className="text-3xl md:text-4xl mb-3">
           Janisse <span className="italic">Constable</span>
         </h2>
-        <p className="text-primary-text text-xs tracking-[0.4em] uppercase mb-2">
+        <p className="text-primary-text text-xs tracking-[0.4em] uppercase mb-12">
           Miss Hauts-de-Seine 2026
         </p>
         <div className="flex items-center justify-center gap-8 mb-12">
